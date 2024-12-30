@@ -130,9 +130,17 @@
     margin-top: 60%;
   }
 
+  .countries-courses-hero{
+    height: 50vh;
+  }
+
+  .countries-courses-text-content h2{
+    font-size: 25px;
+  }
   .countries-courses-text-content p {
-    font-size: 32px;
-    padding: 0px 20px;
+    font-size: 18px;
+    padding: 0px;
+    text-align: justify;
   }
 
   .countries-courses-countries-section {
@@ -144,16 +152,16 @@
   }
 
   .countries-courses-country-card {
-    width: 100%;
+    width: 85%;
     margin: 0 auto;
   }
 
   .countries-courses-courses-section {
-    padding: 20px;
+    padding: 20px 10px 20px 10px;
   }
 
   .courses-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns:repeat(2, 1fr);
   }
 
   .countries-courses-course-card {

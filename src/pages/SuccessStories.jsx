@@ -56,7 +56,7 @@ const SuccessStories = () => {
 
         {/* Red Boxes with White Boxes */}
         <div className="pagination-indicator">
-          {[0, 1, 2].map((box) => (
+          {[0, 1, 2,].map((box) => (
             <div key={box} className="pagination-box">
               <div
                 className="inner-box"

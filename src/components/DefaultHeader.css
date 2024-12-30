@@ -98,7 +98,13 @@
     transform: translateY(0); /* Slide into view */
   }
 
+  .default-header .nav ul{
+    gap: 18px;
+  }
 
+  .default-header{
+    padding: 5px;
+  }
   .hamburger {
     display: flex;
   }

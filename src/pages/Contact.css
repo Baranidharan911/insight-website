@@ -236,8 +236,15 @@
     margin: 150px 20px;
   }
 
+  .hero-section{
+    height: 50vh;
+  }
+
   .gets-in-touch {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .form-container {
@@ -250,12 +257,23 @@
   }
 
   .forms-row input {
-    width: 85.5%;
+    width: 90.5%;
+  }
+
+  .subject-input{
+    width: 90.5%;
+  }
+
+  .messages-input{
+    width: 90.5%;
   }
 
   .details-card {
     padding: 20px;
     height: auto;
+    width: 290px;
+    position: relative;
+    top: -45px;
   }
 
   .details-heading {

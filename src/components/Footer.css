@@ -133,7 +133,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 15px 20px;
+    padding: 15px 10px;
     margin: 0;
   }
 
@@ -142,7 +142,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: start;
+  }
+
+  .carousel-arrow.right-arrow {
+    right: 0px;
+  }
+
+  .carousel-arrow.left-arrow {
+    left: 0px;
+  }
+  .carousel-arrow{
+    top: calc(50% - 8px)
   }
 
   .footer-logo {
@@ -162,6 +173,14 @@
     width: 35px;
   }
 
+  .footer-combined {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+  }
+
+  
+
   /* Combined Middle and Right Section */
   .footer-middle-right-container {
     display: flex;
@@ -171,7 +190,8 @@
   }
 
   .footer-middle {
-    text-align: center;
+    text-align: start;
+    width: 250px;
   }
 
   .footer-middle h3 {
@@ -185,13 +205,21 @@
   .footer-right {
     text-align: center;
   }
+  .footer-middle ul {
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   .footer-right h3 {
     font-size: 24px;
   }
 
   .footer-right p {
-    font-size: 16px;
+    font-size: 14.5px;
   }
 
   .contact-icon {
@@ -207,6 +235,6 @@
   }
 
   .footer-bottom p {
-    font-size: 16px;
+    font-size: 13.5px;
   }
 }
