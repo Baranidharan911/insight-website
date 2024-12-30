@@ -1,0 +1,661 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:#f5f5f5;
+  }
+  
+  .home {
+    width: 100%;
+  }
+  
+
+  
+/* Hero Section */
+.hero {
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: flex-start; /* Align content to the left */
+    /* position: relative;
+    top: 40%; */
+  }
+  
+  .hero-overlay {
+    background-image: url("../images/contact.png");
+    background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text contrast */
+    position: relative;
+    top: -120px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Hero Content Styling */
+  .hero-content {
+    max-width: 600px; /* Limit content width for better alignment */
+    color: #fff; /* White text color */
+    padding-left: 50px; /* Add padding to move content away from the edge */
+  }
+  
+  .hero-content h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #ffe600; /* Yellow text for subheading */
+  }
+  
+  .hero-content h1 {
+    font-size: 66px; /* Larger font size for heading */
+    font-weight: bold;
+    margin: 0%;
+    line-height: 1; /* Adjust line height for better spacing */
+  }
+  
+  .hero-content p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ffe600;
+  }
+  
+  /* Button Container */
+  .hero-buttons {
+    /* margin-top: 30px; */
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Explore Button Styling */
+  .explore-btn {
+    background-color: #fff; /* White button background */
+    color: #d32f2f; /* Red text color */
+    padding: 12px 24px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+/* Watch Button Styling */
+.watch-btn {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    gap: 10px; /* Space between play icon and text */
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* White text */
+    font-size: 16px; /* Font size for text */
+    font-weight: bold; /* Bold text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  /* Play Icon Styling */
+  .play-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Width of circular icon */
+    height: 40px; /* Height of circular icon */
+    border: solid 2px #fff; /* White border for the circle */
+    border-radius: 50%; /* Make it circular */
+    
+  }
+  
+  .play-icon::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #fff; /* White triangle for play icon */
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+  }
+  
+  /* Hover Effect for Button */
+  .watch-btn:hover {
+    color: #ffe600; /* Yellow text on hover */
+  }
+  
+  .watch-btn:hover .play-icon {
+    border-color: #ffe600; /* Yellow border for play icon on hover */
+  }
+  
+  .watch-btn:hover .play-icon::after {
+    border-left-color: #ffe600; /* Yellow triangle on hover */
+  }
+     
+  
+/* Countries Section */
+.countries {
+    padding: 15px 20px;
+    background-color: #fff; /* White background */
+    width: 70%; /* Set width for the section */
+    margin: 0 auto; /* Center the section horizontally */
+    text-align: center;
+    position: relative;
+    bottom: 245px;
+    border-radius: 40px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+  /* Section Title */
+  .countries h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px 30px 0px 30px;
+    color: #000;
+  }
+
+  /* Carousel Container */
+  .carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  /* Carousel */
+  .carousel {
+    display: flex;
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    gap: 60px; /* Space between country items */
+    padding: 0 0px 0px 30px;
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for cleaner design */
+  }
+
+  
+  /* Country Item Styling */
+  .country-item {
+    display: flex;
+    flex-shrink: 0; /* Prevent items from shrinking */
+    width: calc(100% / 10); /* Ensure only 6 items fit in the visible area */
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center align image and text */
+    gap: 10px; /* Space between image and text */
+  }
+
+  .country-item img {
+    width: 176%; /* Set a fixed width for images */
+    height: 120px; /* Maintain aspect ratio */
+  }
+
+  .country-item p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000; /* Black text for country names */
+    margin: 0;
+  }
+
+  /* Arrows Styling */
+  .carousel-arrow {
+    position: absolute;
+    top: calc(50% - 20px); /* Center vertically */
+    transform: translateY(-50%); /* Adjust centering */
+    background-color: #fff; /* White background for arrows */
+    color: #000; /* Black arrow color */
+    border: none; /* Remove default border */
+    border-radius: 50%; /* Circular button */
+    width: 40px; /* Width of arrow button */
+    height: 40px; /* Height of arrow button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+
+  .carousel-arrow:hover {
+    background-color: #d32f2f; /* Red background on hover */
+  }
+
+  /* Left Arrow Positioning */
+  .carousel-arrow.left-arrow {
+    left: 38px; /* Position to the left of the carousel container */
+  }
+
+  /* Right Arrow Positioning */
+  .carousel-arrow.right-arrow {
+    right: 38px; /* Position to the right of the carousel container */
+  } 
+
+/* Overseas Consultancy Section */
+.consultancy {
+    display: flex;
+    margin-top: -250px;
+    justify-content: center; /* Center align content horizontally */
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5; /* Light gray background */
+  }
+
+  .consultancy-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Space between image and text */
+    max-width: 1200px; /* Limit the width of the section */
+    gap: 20px; /* Space between image and text */
+  }
+
+  /* Image Styling */
+  .consultancy-image {
+    width: 75%; /* Image takes up 45% of the width */
+    max-width: 550px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0px; /* Optional rounded corners */
+  }
+
+  /* Text Content Styling */
+  .consultancy-text {
+    width: 50%; /* Text takes up 50% of the width */
+  }
+
+  .consultancy-text h2 {
+    font-size: 32px; /* Larger font size for heading */
+    font-weight: bold;
+    color: #d32f2f; /* Red color for heading */
+  }
+
+  .consultancy-text p {
+    margin-top: 0px;
+    line-height: 1.8; /* Increase line height for better readability */
+    font-size: 20px;
+  }
+
+  
+/* Call-to-Action Section */
+.cta-section {
+    background-color: #d32f2f; /* Red background */
+    color: #ffe600; /* Yellow text */
+    text-align: center;
+    padding: 10px 30px;
+  }
+
+  .cta-section h1 {
+    font-size: 46px;
+    margin: 0px 250px;
+    font-weight: bold;
+  }
+
+  .call-now-btn {
+    margin-top: 15px;
+    background-color: #fff; /* White button background */
+    color: #d32f2f; /* Red text for button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .call-now-btn:hover {
+    background-color: #f5f5f5; /* Light gray hover effect */
+  }
+
+
+/* Video Section */
+.video-section {
+    background-color: #fff; /* Red background */
+    padding: 20px 0; /* Space above and below the video container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-container {
+    width: 100%; /* Make the container take up most of the screen width */
+    max-width: 1440px; /* Limit maximum width for larger screens */
+    background-color: #fff; /* White background for the container */
+    border-radius: 0px; /* Rounded corners for the container */
+    overflow: hidden; /* Ensure the video doesn't overflow the container */
+  }
+
+  .video-element {
+    width: 100%; /* Make the video span the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+/* Contact Section */
+.contact-section {
+    padding: 40px;
+    background-color: #f5f5f5; /* Light gray background */
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: #d32f2f; /* Red text */
+    margin-bottom: 30px;
+  }
+  
+  /* Container for Image and Form */
+  .contact-form-container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start; /* Align items vertically */
+    gap: 20px; /* Space between image and form */
+  }
+  
+  /* Contact Image */
+  .contact-image img {
+    max-width: 590px; /* Adjust size for better alignment with form */
+    height: 590px;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    height: 550px;
+    width: 550px;
+    background-color: #fff; /* White background for form */
+    padding: 20px;
+    border-radius: 0px; /* No rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Name Input Field */
+.contact-form .name-input {
+    width: calc(100% - 70px);
+    padding: 15px;
+    margin-bottom: 35px;
+    background-color: rgb(234, 233, 233);
+    border: bisque;
+    margin-left: 17.5px;
+    margin-top: 50px;
+  }
+  
+  /* Email and Phone Fields in Same Row */
+  .contact-form .email-phone-row {
+    display: flex;
+    width: calc(100% - 20.5px);
+    gap: 10px; /* Space between email and phone inputs */
+  }
+  
+  .contact-form .email-phone-row .email-input,
+  .contact-form .email-phone-row .phone-input {
+    flex: 1; /* Equal width for both inputs */
+    border: bisque;
+    padding: 15px;
+    margin-bottom: 35px;
+    background-color: rgb(234, 233, 233);
+    margin-left: 17.5px;
+    /* margin-top: 50px; */
+  }
+  
+  /* Message Input Field */
+  .contact-form .message-input {
+    width: calc(100% - 68.5px);
+    background-color: rgb(234, 233, 233);
+    border: bisque;
+    height: 100px;
+    padding: 15px;
+    margin-bottom: 35px;
+    margin-left: 17.5px;
+  }
+  
+  /* Program Options Styling (Radio Buttons) */
+  .program-options {
+    margin-bottom: 15px;
+  }
+  
+  .program-options label {
+    display: block;
+    margin-left: 17.5px;
+    margin-bottom: 5px;
+  }
+
+  .radio-group {
+    display: flex;
+    flex-direction: column; /* Stack radio buttons vertically */
+    gap: 10px; /* Space between each radio button */
+  }
+  
+  /* Individual Radio Option Styling */
+  .program-options .radio-option {
+    display: flex;
+    align-items: center;
+    gap: 3px; /* Space between the circle and text */
+    font-size: 14px; /* Adjust text size */
+  }
+  
+  /* Radio Button Circle Styling */
+  .radio-option input[type="radio"] {
+    appearance: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 20px; /* Increase circle size */
+    height: 20px; /* Increase circle size */
+    margin-top: 0px;
+    background-color: lightgrey;
+    accent-color: #d32f2f; /* Red color for the circle */
+  }
+
+  .radio-option input[type="radio"]:checked {
+    background-color: #d32f2f; /* Red background for selected state */
+  }
+
+/* Submit Button */
+.submit-btn {
+    background-color: #d32f2f; /* Red background */
+    color: #fff; /* White text */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 13px 8px; /* Padding for button size */
+    margin-left: 17.5px;
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .submit-btn:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+  }
+  
+  .submit-btn:active {
+    transform: scale(0.98); /* Slightly shrink button on click */
+  }
+  
+  
+/* Mobile Responsive Design - Home Page */
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-overlay {
+    top: -80px;
+  }
+
+  .hero-content {
+    padding: 15px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero-content h3 {
+    font-size: 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .explore-btn {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .watch-btn {
+    font-size: 14px;
+  }
+
+  .play-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .countries {
+    width: 90%;
+    bottom: 155px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .countries h2 {
+    font-size: 20px;
+    margin: 0px 15px;
+  }
+
+  .carousel {
+    gap: 20px;
+    padding: 0 15px;
+    margin: 0 15px;
+  }
+
+  .country-item {
+    width: calc(100% / 3);
+  }
+
+  .country-item img {
+    width: 100%;
+    height: 80px;
+  }
+
+  .country-item p {
+    font-size: 12px;
+  }
+
+  .consultancy {
+    margin-top: -150px;
+    padding: 20px 10px;
+  }
+
+  .consultancy-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .consultancy-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .consultancy-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .consultancy-text h2 {
+    font-size: 24px;
+  }
+
+  .consultancy-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .cta-section {
+    padding: 8px 15px;
+  }
+
+  .cta-section h1 {
+    font-size: 24px;
+    margin: 0px 10px;
+  }
+
+  .call-now-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .video-section {
+    padding: 10px 0;
+  }
+
+  .video-container {
+    border-radius: 0;
+  }
+
+  .contact-section {
+    padding: 20px;
+  }
+
+  .contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .contact-form-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-image img {
+    max-width: 100%;
+    height: 300px;
+    margin-left: 34px;
+  }
+
+  .contact-form {
+    width: 95%;
+    height: auto;
+    padding: 15px 10px 15px 15px;
+  }
+
+  .contact-form .name-input,
+  .contact-form .email-phone-row .email-input,
+  .contact-form .email-phone-row .phone-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .contact-form .email-phone-row {
+    display: flex;
+    width: calc(100% - 33.5px);
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .contact-form .message-input {
+    height: 80px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .program-options label {
+    font-size: 14px;
+  }
+
+  .radio-option input[type="radio"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .submit-btn {
+    padding: 10px 6px;
+    font-size: 14px;
+  }
+}

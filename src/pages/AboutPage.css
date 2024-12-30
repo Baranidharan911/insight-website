@@ -1,0 +1,183 @@
+.about-page {
+    font-family: Arial, sans-serif;
+    background-color: #ffff;
+  }
+.about-hero-section {
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    position: relative;
+    z-index: 1;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+  }
+
+  .about-hero-overlay {
+    background-image: url("../images/contact.png"); /* Background image for overlay */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text contrast */
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .about-hero-overlay h1 {
+    color: #fff; /* White text */
+    font-size: 65px;
+    margin: 350px;
+    text-align: center;
+  }
+
+/* About Content Section */
+.about-content {
+    background-color: #fff;
+    padding: 20px 150px; /* Add padding for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    max-width: 100%; /* Limit the width of the content */
+    line-height: 1.8; /* Improve readability */
+  }
+  
+  .about-content h2 {
+    font-size: 36px; /* Large font size for heading */
+    font-weight: bold;
+    color: #d32f2f; /* Red color for heading */
+    margin-bottom: 0px; /* Space below heading */
+    margin-top: 0px;
+  }
+  
+  .about-content p {
+    font-size: 26px; /* Standard font size for paragraphs */
+    color: #333; /* Dark gray text color */
+    line-height: 1.2;
+    margin-top: 0px;
+    margin-bottom: 20px; /* Space between paragraphs */
+  }
+  
+  .cta-banner {
+    background-color: #d32f2f; /* Red background for the banner */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    padding: 20px 90px;
+    font-size: 48px;
+    margin: 0px 90px;
+    font-weight: bold;
+    border-radius: 10px; /* Rounded corners for the banner */
+  }
+
+/* Our Services Section */
+.our-services {
+    padding: 30px 40px; /* Add spacing around the section */
+    background-color: #fff; /* Light background color */
+  }
+  
+  .our-services h2 {
+    text-align: center;
+    font-size: 36px; /* Large heading size */
+    font-weight: bold;
+    color: #d32f2f; /* Red color for heading */
+    margin-top: 0px;
+    margin-bottom: 40px; /* Space below the heading */
+  }
+  
+  /* Services Grid Layout */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid layout */
+    gap: 50px; /* Space between cards */
+  }
+  
+  /* Individual Service Card Styling */
+  .service-card {
+    background-color: lightgrey; /* White background for cards */
+    border-radius: 0px; 
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  */
+    display: flex;
+    flex-direction: column; /* Stack heading, image, and text vertically */
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+  
+  .service-card h3 {
+    font-size: 20px; /* Heading size */
+    font-weight: bold;
+    text-align: center;
+    color: #d32f2f; /* Red color for headings */
+    margin-bottom: 15px; /* Space below heading */
+  }
+  
+  .service-card img {
+    width: 250px; /* Fixed size for icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space below the icon */
+  }
+  
+  .service-card h3 {
+    font-size: 38px; /* Heading size */
+    line-height: 1;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #d32f2f; /* Red color for headings */
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    font-size: 32px;
+    text-align: justify;
+    color: #555; /* Dark gray text for descriptions */
+  }
+  
+  /* Red Empty Container */
+.red-container {
+  background-color: #d32f2f; /* Red background */
+  height: 10px; /* Adjust height as needed */
+  width: 100%; /* Full width of the screen */
+}
+
+  
+  
+/* Mobile Responsive Design - About Page */
+@media screen and (max-width: 768px) {
+  .about-hero-overlay h1 {
+    font-size: 40px;
+    margin: 150px 20px;
+  }
+
+  .about-content {
+    padding: 20px;
+  }
+
+  .about-content h2 {
+    font-size: 28px;
+  }
+
+  .about-content p {
+    font-size: 18px;
+  }
+
+  .cta-banner {
+    font-size: 32px;
+    padding: 15px;
+    margin: 0px 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .service-card h3 {
+    font-size: 28px;
+  }
+
+  .service-card p {
+    font-size: 24px;
+  }
+}

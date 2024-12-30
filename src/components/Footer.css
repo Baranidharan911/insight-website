@@ -1,0 +1,212 @@
+/* General Footer Styling */
+.footer {
+  background-color: #fff; /* White background */
+  color: #d32f2f; /* Red text */
+  padding-top: 40px;
+}
+
+/* Footer Main Content */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  margin: 0 40px;
+  gap: 0px; /* Adjust spacing between sections */
+}
+
+/* Left Section */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  max-width: 200px; /* Adjust logo size */
+}
+
+.footer-left p {
+  font-size: 22px;
+  line-height: 1.6;
+  color: black;
+}
+
+/* Social Media Icons */
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a img {
+  width: 50px; /* Icon size */
+}
+
+.social-icons a:hover img {
+  filter: brightness(0.8); /* Slightly darken on hover */
+}
+
+/* Middle Section (Quick Links) */
+.footer-middle {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-middle h3 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.footer-middle ul {
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-middle ul li a {
+  color: #000;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+.footer-middle ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Right Section (Contacts) */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-right h3 {
+  font-size: 35px;
+  margin-bottom: 3px;
+  margin-top: 5px;
+}
+
+.footer-right p {
+  font-size: 20px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.contact-icon {
+  width: 50px;
+  margin-right: 10px;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  background-color: #d32f2f;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.footer-bottom p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.footer-combined{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+/* Footer Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-top: 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 20px;
+    margin: 0;
+  }
+
+  /* Left Section */
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    max-width: 150px;
+  }
+
+  .footer-left p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .social-icons a img {
+    width: 35px;
+  }
+
+  /* Combined Middle and Right Section */
+  .footer-middle-right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footer-middle {
+    text-align: center;
+  }
+
+  .footer-middle h3 {
+    font-size: 24px;
+  }
+
+  .footer-middle ul li a {
+    font-size: 16px;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+
+  .footer-right h3 {
+    font-size: 24px;
+  }
+
+  .footer-right p {
+    font-size: 16px;
+  }
+
+  .contact-icon {
+    width: 35px;
+  }
+
+  /* Footer Bottom Section */
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    font-size: 16px;
+  }
+}

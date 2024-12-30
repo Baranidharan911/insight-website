@@ -1,0 +1,147 @@
+/* HomeHeader Styles */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: transparent; /* Matches the image */
+  color: #fff; /* White text */
+  position: relative;
+  z-index: 100;
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 200px; /* Adjust logo size */
+}
+
+/* Hamburger Menu */
+.hamburgers {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25px;
+  cursor: pointer;
+}
+
+.hamburgers .line {
+  height: 3px;
+  width: 30px;
+  background-color: #fff;
+}
+
+/* Navigation Menu */
+.nav {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.nav ul li a:hover {
+  color: #ffe600; /* Yellow hover effect */
+}
+
+/* Contact Section */
+.contacts-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contacts-section p {
+  margin: 0;
+}
+
+/* Consultation Button */
+.consultation-btn {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.consultation-btn:hover {
+  background-color: #ffe600;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  /* Header Adjustments */
+  .home-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .logo-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts-section {
+    display: none; /* Hidden in mobile for cleaner layout */
+  }
+
+  /* Hamburger Menu */
+  .hamburgers {
+    display: flex;
+    position: relative;
+    bottom: -15px;
+  }
+
+  /* Navigation Menu */
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff; /* Matches the header's theme */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 200;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px;
+  }
+
+  .nav ul li a {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #000;
+  }
+}

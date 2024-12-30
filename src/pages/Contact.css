@@ -1,0 +1,268 @@
+/* General Styling */
+.contact-page {
+    font-family: Arial, sans-serif;
+    background-color: #ffff;
+  }
+  
+/* Hero Section */
+.hero-section {
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  position: relative;
+  z-index: 1;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+/* Hero Overlay */
+.heros-overlay {
+  background-image: url("../images/contact.png"); /* Background image for overlay */
+  background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text contrast */
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hero Heading */
+.heros-overlay h1 {
+  color: #fff; /* White text */
+  font-size: 65px;
+  margin: 350px;
+  text-align: center;
+}
+
+  
+/* Get in Touch Section */
+.gets-in-touch {
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: flex-start; /* Align content to the top */
+    padding: 30px;
+  }
+  
+  .form-container {
+    width: 100%; /* Full width of the container */
+    max-width: 800px; /* Limit maximum width */
+  }
+  
+  .form-container h2 {
+    font-size: 36px; /* Larger heading size */
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #d32f2f; /* Red heading */
+  }
+  
+  .form-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333; /* Dark gray text */
+  }
+  
+  
+/* Form Row for Name and Email */
+.forms-row {
+    display: flex;
+    gap: 20px; /* Space between Name and Email inputs */
+  }
+  
+  .forms-row input {
+    /* flex: 0.9;  */
+    width: 39%;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    border: none; /* Remove borders */
+    background-color: #f5f5f5; /* Light gray background */
+  }
+  
+  .forms-row input::placeholder {
+    color: #aaa; /* Light gray placeholder text */
+  }
+  
+  
+/* Subject Input Styling */
+.subject-input {
+    width: 85.5%; /* Full width of container */
+    padding: 20px; /* Padding inside the input */
+    margin:25px 0px; /* Space below the input */
+    border-radius: 10px; /* Rounded corners */
+    border: none; /* Remove borders */
+    background-color: #f5f5f5; /* Light gray background */
+    font-size: 16px; /* Font size for text inside input */
+    color: #333; /* Dark gray text color */
+  }
+  
+  .subject-input::placeholder {
+    color: #aaa; /* Light gray placeholder text */
+  }  
+  
+/* Message Textarea Styling */
+.messages-input {
+    width: 85.5%; /* Full width of container */
+    height: 150px; /* Larger height for message box */
+    padding: 20px; /* Padding inside the textarea */
+    margin: 25px 0px; /* Space below the textarea */
+    border-radius: 10px; /* Rounded corners */
+    border: none; /* Remove borders */
+    background-color: #f5f5f5; /* Light gray background */
+    font-size: 16px; /* Font size for text inside textarea */
+    color: #333; /* Dark gray text color */
+  }
+  
+  .messages-input::placeholder {
+    color: #aaa; /* Light gray placeholder text */
+  }
+  
+    
+/* Submit Button Styling */
+.submits-btn {
+    background-color: #d32f2f; /* Red button background */
+    color: #fff; /* White text */
+    padding: 15px 10px; /* Padding for button size */
+    font-size: 16px; /* Font size for button text */
+    font-weight: bold;
+    border-radius: 10px; /* Rounded corners for the button */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 0px;
+  }
+  
+  .submits-btn:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+  }
+   
+  
+
+/* Contact Details Section */
+.contact-details {
+    display: flex;
+    justify-content: start; /* Center the card horizontally */
+    align-items: flex-start; /* Align content to the top */
+    margin-top: 120px; /* Add spacing above the card */
+  }
+  
+  .details-card {
+    background-color: #d32f2f; /* Red background for the card */
+    color: #fff; /* White text */
+    padding: 30px;
+    border-radius: 30px; /* Rounded corners */
+    height: 330px;
+    width: 100%; /* Full width of container */
+    max-width: 1050px; /* Limit maximum width for the card */
+  }
+  
+  /* Individual Item Styling */
+  .details-item {
+    display: flex;
+    align-items: flex-start; /* Align icon and text vertically at the top */
+    gap: 5px; /* Space between icon and text */
+    margin-bottom: 20px; /* Space between items */
+  }
+
+  .detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align icon and text vertically at the top */
+    gap: 8px; /* Space between icon and text */
+    margin-bottom: 20px; /* Space between items */
+  }
+  
+  .details-icon {
+    width: 45px; /* Icon size */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .details-heading {
+    font-size: 35px;
+    margin: 0;
+    /* font-weight: bold; */
+  }
+
+  .details-item p{
+    font-size: 13px;
+    margin: 5px;
+  }
+
+  .detail-item h5{
+    font-size: 23px;
+    margin: 1px;
+
+  }
+
+  .details-heading h5{
+    font-size: 23px;
+    margin: 5px;
+    font-weight: bold;
+  }
+  
+  /* Social Media Icons */
+  .socials-icons {
+    display: flex;
+    justify-content: flex-start; /* Align icons to the left */
+    gap: 5px; /* Space between icons */
+  }
+  
+  .socials-icons a img {
+    width: 40px; /* Icon size for social media icons */
+  }    
+  
+  /* Map Section */
+.map-section {
+    background-color: #d32f2f; /* Red background for the section */
+    padding: 10px 0; /* Space above and below the map */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .map-section iframe {
+    width: 100%; /* Map takes up 90% of the screen width */
+    max-width: 1477px; /* Limit maximum width for larger screens */
+    height: 450px; /* Fixed height for the map */
+    border: none; /* Remove default iframe border */
+    border-radius: 0px; /* Rounded corners for the map */
+  }
+  
+  
+/* Mobile Responsive Design - Contact Page */
+@media screen and (max-width: 768px) {
+  .heros-overlay h1 {
+    font-size: 40px;
+    margin: 150px 20px;
+  }
+
+  .gets-in-touch {
+    padding: 20px;
+  }
+
+  .form-container {
+    max-width: 100%;
+  }
+
+  .forms-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .forms-row input {
+    width: 85.5%;
+  }
+
+  .details-card {
+    padding: 20px;
+    height: auto;
+  }
+
+  .details-heading {
+    font-size: 28px;
+  }
+
+  .map-section iframe {
+    height: 300px;
+  }
+}
