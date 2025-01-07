@@ -56,7 +56,7 @@
   
 /* Countries Section */
 .countries-courses-countries-section {
-    padding: 40px 100px; /* Add spacing around the section */
+    padding: 40px 10px; /* Add spacing around the section */
     background-color: #d32f2f; /* Red background color */
   }
   
@@ -71,8 +71,8 @@
   /* Grid Layout for Countries */
   .countries-courses-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
-    gap: 35px; /* Space between cards */
+    grid-template-columns: repeat(4,1fr); /* Responsive grid layout */
+    gap: 15px; /* Space between cards */
   }
   
   /* Individual Country Card Styling */
@@ -97,7 +97,7 @@
 
 /* Courses Section */
 .countries-courses-courses-section {
-  padding: 40px 150px;
+  padding: 40px 20px;
   background-color: #d7d5d5;
 }
 
@@ -112,7 +112,8 @@
 .courses-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .countries-courses-course-card {
@@ -155,7 +156,7 @@
     border-radius: 35px; /* Rounded corners for a modern look */
     /* border: black solid 3px; */
     aspect-ratio: 3 / 3; /* Ensures square shape */
-    width: 420px;
+    width: 400px;
   }   
   
 /* Mobile Responsive Design - Countries and Courses Page */

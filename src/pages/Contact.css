@@ -146,7 +146,7 @@
     justify-content: start; /* Center the card horizontally */
     align-items: flex-start; /* Align content to the top */
     margin-top: 120px; /* Add spacing above the card */
-    width: 50%;
+    width: 70%;
   }
   
   .details-card {
@@ -154,9 +154,9 @@
     color: #fff; /* White text */
     padding: 30px;
     border-radius: 30px; /* Rounded corners */
-    height: 350px;
+    height: 400px;
     width:50%;
-    max-width: 1300px; 
+    max-width: 1350px; 
   }
   
   /* Individual Item Styling */
