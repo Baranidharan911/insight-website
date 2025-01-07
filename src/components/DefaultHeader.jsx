@@ -11,7 +11,7 @@ const DefaultHeader = () => {
   return (
     <header className="default-header">
       <div className="logo">
-        <img src={require("../images/logo.png")} alt="Insight Logo" />
+        <img src={require("../images/Asset 3.png")} alt="Insight Logo" />
       </div>
 
       {/* Hamburger Icon for Mobile */}
@@ -22,18 +22,20 @@ const DefaultHeader = () => {
       </div>
 
       {/* Navigation Menu */}
-      <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/countries-courses">Countries & Courses</a></li>
-          <li><a href="/success-stories">Success Stories</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div className="nav-contact">
+        <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/countries-courses">Countries & Courses</a></li>
+            <li><a href="/success-stories">Success Stories</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
 
-      {/* Button (hidden in mobile view) */}
-      <button className="consultation-btn">Get a Free →</button>
+        {/* Button (hidden in mobile view) */}
+        <button className="consultation-btn">Get a Free →</button>
+      </div>
     </header>
   );
 };

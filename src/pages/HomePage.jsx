@@ -33,28 +33,34 @@ const HomePage = () => {
     return (
     <div className="home">
         {/* Hero Section */}
-        <section id="hero" className="hero" style={{ backgroundImage: `url("../images/contact.png")` }}>
-        <div className="hero-overlay">
-            <div className="hero-content">
-            <h3>Welcome to Insight Educator & Abroad Services</h3>
-            <h1>
-                Start Your Global <br />
-                Education Journey
-            </h1>
-            <p>
-                Begin your global education journey with Insight! <br />
-                We offer complete overseas admission support, <br />
-                covering everything from admission to accommodation & travel.
-            </p>
-            <div className="hero-buttons">
-                <button className="explore-btn">Explore Courses</button>
-                <button className="watch-btn">
-                <span className="play-icon"></span> Watch it Now
-                </button>
+        <section id="hero" className="hero" style={{ backgroundImage: `url("../images/hero.jpg")` }}>
+            <div className="hero-overlay">
+                <div className="hero-flex-container">
+                    <div className="hero-content">
+                        <h3>Welcome to Insight Educator & Abroad Services</h3>
+                        <h1>
+                            Start Your Global <br />
+                            Education Journey
+                        </h1>
+                        <p>
+                            Begin your global education journey with Insight! <br />
+                            We offer complete overseas admission support, <br />
+                            covering everything from admission to accommodation & travel.
+                        </p>
+                        <div className="hero-buttons">
+                            <button className="explore-btn">Explore Courses</button>
+                            <button className="watch-btn">
+                                <span className="play-icon"></span> Watch it Now
+                            </button>
+                        </div>
+                    </div>
+                    <div className="hero-side-image">
+                        <img src={require("../images/h-image.png")} alt="Hero Side" />
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
         </section>
+
 
         <section id="countries" className="countries">
         <h2>Your Gateway to Global Education</h2>
@@ -133,7 +139,7 @@ const HomePage = () => {
         <div className="contact-form-container">
             {/* Contact Image */}
             <div className="contact-image">
-            <img src={require("../images/contact.png")} alt="Contact Us" />
+            <img src={require("../images/connect.jpg")} alt="Contact Us" />
             </div>
 
             {/* Form */}

@@ -4,14 +4,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
+  height: 90px;
   background-color: #fff;
   position: relative;
 }
 
 /* Logo Styling */
 .default-header .logo img {
-  height: 80px;
-  width: auto;
+width: 200px;
 }
 
 /* Navigation Styling */
@@ -32,8 +32,8 @@
 .default-header .nav ul li a {
   text-decoration: none;
   color: #000;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .default-header .nav ul li a:hover {
@@ -44,7 +44,7 @@
 .consultation-btn {
   background-color: #d32f2f;
   color: #fff;
-  padding: 10px 20px;
+  padding: 8px 12px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -69,6 +69,13 @@
   height: 3px;
   width: 30px;
   background-color: #000;
+}
+
+.nav-contact{
+  display: flex;
+  gap: 25px;
+  justify-content: flex-end;
+
 }
 
 /* Mobile View */
@@ -107,6 +114,8 @@
   }
   .hamburger {
     display: flex;
+    position: relative;
+    left: 45px;
   }
 
   .consultation-btn {

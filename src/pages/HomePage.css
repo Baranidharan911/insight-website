@@ -13,125 +13,182 @@ body {
   
 /* Hero Section */
 .hero {
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent tiling */
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: flex-start; /* Align content to the left */
-    /* position: relative;
-    top: 40%; */
-  }
-  
-  .hero-overlay {
-    background-image: url("../images/contact.png");
-    background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text contrast */
-    position: relative;
-    top: -120px;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Hero Content Styling */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-overlay {
+  background-image: url("../images/hero.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: -120px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+/* Hero Content Styling */
+.hero-content {
+  max-width: 50%;
+  color: #fff;
+}
+
+.hero-content h3 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #ffe600;
+}
+
+.hero-content h1 {
+  font-size: 66px;
+  font-weight: bold;
+  margin: 0%;
+  line-height: 1;
+}
+
+.hero-content p {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #ffe600;
+}
+
+/* Hero Side Image */
+.hero-side-image {
+  max-width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-side-image img {
+  max-width: 100%;
+  height: 950px;
+  object-fit: contain;
+}
+.hero-flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between ;
+  align-items: center;
+  gap: 100px;
+}
+
+/* Button Container */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Explore Button Styling */
+.explore-btn {
+  background-color: #fff;
+  color: #d32f2f;
+  padding: 12px 24px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Watch Button Styling */
+.watch-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.play-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: solid 2px #fff;
+  border-radius: 50%;
+}
+
+.play-icon::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #fff;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.watch-btn:hover {
+  color: #ffe600;
+}
+
+.watch-btn:hover .play-icon {
+  border-color: #ffe600;
+}
+
+.watch-btn:hover .play-icon::after {
+  border-left-color: #ffe600;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
   .hero-content {
-    max-width: 600px; /* Limit content width for better alignment */
-    color: #fff; /* White text color */
-    padding-left: 50px; /* Add padding to move content away from the edge */
-  }
-  
-  .hero-content h3 {
-    font-size: 20px;
-    font-weight: normal;
-    color: #ffe600; /* Yellow text for subheading */
+      max-width: 60%;
   }
   
   .hero-content h1 {
-    font-size: 66px; /* Larger font size for heading */
-    font-weight: bold;
-    margin: 0%;
-    line-height: 1; /* Adjust line height for better spacing */
+      font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-overlay {
+      flex-direction: column;
+      padding: 20px;
   }
   
-  .hero-content p {
-    margin-top: 15px;
-    font-size: 20px;
-    color: #ffe600;
+  .hero-content {
+      max-width: 100%;
+      text-align: center;
   }
   
-  /* Button Container */
+  .hero-side-image {
+      width: 80%;
+      max-width: 300px;
+      margin-top: 0px;
+      display: none;
+  }
+
+  .hero-side-image img {
+    max-width: 150%;
+    height: 150px;
+    object-fit: fill;
+  }
+  
   .hero-buttons {
-    /* margin-top: 30px; */
-    display: flex;
-    gap: 20px;
+      justify-content: center;
   }
-  
-  /* Explore Button Styling */
-  .explore-btn {
-    background-color: #fff; /* White button background */
-    color: #d32f2f; /* Red text color */
-    padding: 12px 24px;
-    font-size: 14px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-  }
-  
-/* Watch Button Styling */
-.watch-btn {
-    display: flex;
-    align-items: center; /* Align icon and text vertically */
-    gap: 10px; /* Space between play icon and text */
-    background-color: transparent; /* Transparent background */
-    color: #fff; /* White text */
-    font-size: 16px; /* Font size for text */
-    font-weight: bold; /* Bold text */
-    border: none; /* Remove border */
-    cursor: pointer; /* Pointer cursor on hover */
-  }
-  
-  /* Play Icon Styling */
-  .play-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px; /* Width of circular icon */
-    height: 40px; /* Height of circular icon */
-    border: solid 2px #fff; /* White border for the circle */
-    border-radius: 50%; /* Make it circular */
-    
-  }
-  
-  .play-icon::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    border-left: 10px solid #fff; /* White triangle for play icon */
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-  }
-  
-  /* Hover Effect for Button */
-  .watch-btn:hover {
-    color: #ffe600; /* Yellow text on hover */
-  }
-  
-  .watch-btn:hover .play-icon {
-    border-color: #ffe600; /* Yellow border for play icon on hover */
-  }
-  
-  .watch-btn:hover .play-icon::after {
-    border-left-color: #ffe600; /* Yellow triangle on hover */
-  }
-     
+}
+
   
 /* Countries Section */
 .countries {
-    padding: 15px 20px;
+    padding: 30px 20px;
     background-color: #fff; /* White background */
     width: 70%; /* Set width for the section */
     margin: 0 auto; /* Center the section horizontally */
@@ -165,7 +222,7 @@ body {
     align-items: center;
     overflow-x: auto; /* Enable horizontal scrolling */
     scroll-behavior: smooth; /* Smooth scrolling effect */
-    gap: 60px; /* Space between country items */
+    gap: 65px; /* Space between country items */
     padding: 0 0px 0px 30px;
     margin-right: 80px;
     margin-left: 80px;
@@ -180,7 +237,7 @@ body {
   .country-item {
     display: flex;
     flex-shrink: 0; /* Prevent items from shrinking */
-    width: calc(100% / 10); /* Ensure only 6 items fit in the visible area */
+    width: calc(100% / 9.5); /* Ensure only 6 items fit in the visible area */
     flex-direction: column; /* Stack image and text vertically */
     align-items: center; /* Center align image and text */
     gap: 10px; /* Space between image and text */
@@ -244,14 +301,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly; /* Space between image and text */
-    max-width: 1200px; /* Limit the width of the section */
+    max-width: 1400px; /* Limit the width of the section */
     gap: 20px; /* Space between image and text */
   }
 
   /* Image Styling */
   .consultancy-image {
     width: 75%; /* Image takes up 45% of the width */
-    max-width: 550px; /* Limit maximum width */
+    max-width: 650px; /* Limit maximum width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 0px; /* Optional rounded corners */
   }
@@ -262,28 +319,30 @@ body {
   }
 
   .consultancy-text h2 {
-    font-size: 32px; /* Larger font size for heading */
-    font-weight: bold;
+    font-size: 38px; /* Larger font size for heading */
+    text-align: justify;
+    font-weight: bolder;
     color: #d32f2f; /* Red color for heading */
   }
 
   .consultancy-text p {
     margin-top: 0px;
     line-height: 1.8; /* Increase line height for better readability */
-    font-size: 20px;
+    font-size: 23px;
+    text-align: justify ;
   }
 
   
 /* Call-to-Action Section */
 .cta-section {
     background-color: #d32f2f; /* Red background */
-    color: #ffe600; /* Yellow text */
+    color: #fff; /* Yellow text */
     text-align: center;
     padding: 10px 30px;
   }
 
   .cta-section h1 {
-    font-size: 46px;
+    font-size: 56px;
     margin: 0px 250px;
     font-weight: bold;
   }
@@ -292,8 +351,10 @@ body {
     margin-top: 15px;
     background-color: #fff; /* White button background */
     color: #d32f2f; /* Red text for button */
-    padding: 10px 20px;
+    padding: 15px 25px;
     border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
     border: none;
   }
 
@@ -313,7 +374,7 @@ body {
 
   .video-container {
     width: 100%; /* Make the container take up most of the screen width */
-    max-width: 1440px; /* Limit maximum width for larger screens */
+    max-width: 1640px; /* Limit maximum width for larger screens */
     background-color: #fff; /* White background for the container */
     border-radius: 0px; /* Rounded corners for the container */
     overflow: hidden; /* Ensure the video doesn't overflow the container */
@@ -327,7 +388,7 @@ body {
 /* Contact Section */
 .contact-section {
     padding: 40px;
-    background-color: #f5f5f5; /* Light gray background */
+    background-color: #d1d0d0; /* Light gray background */
   }
   
   .contact-section h2 {
@@ -348,14 +409,14 @@ body {
   
   /* Contact Image */
   .contact-image img {
-    max-width: 590px; /* Adjust size for better alignment with form */
-    height: 590px;
+    max-width: 690px; /* Adjust size for better alignment with form */
+    height: 690px;
   }
   
   /* Contact Form */
   .contact-form {
-    height: 550px;
-    width: 550px;
+    height: 650px;
+    width: 650px;
     background-color: #fff; /* White background for form */
     padding: 20px;
     border-radius: 0px; /* No rounded corners */
@@ -365,8 +426,9 @@ body {
   /* Name Input Field */
 .contact-form .name-input {
     width: calc(100% - 70px);
-    padding: 15px;
+    padding: 18px;
     margin-bottom: 35px;
+    border-radius: 10px;
     background-color: rgb(234, 233, 233);
     border: bisque;
     margin-left: 17.5px;
@@ -376,6 +438,7 @@ body {
   /* Email and Phone Fields in Same Row */
   .contact-form .email-phone-row {
     display: flex;
+    border-radius: 10px;
     width: calc(100% - 20.5px);
     gap: 10px; /* Space between email and phone inputs */
   }
@@ -384,7 +447,8 @@ body {
   .contact-form .email-phone-row .phone-input {
     flex: 1; /* Equal width for both inputs */
     border: bisque;
-    padding: 15px;
+    padding: 18px;
+    border-radius: 10px;
     margin-bottom: 35px;
     background-color: rgb(234, 233, 233);
     margin-left: 17.5px;
@@ -396,8 +460,9 @@ body {
     width: calc(100% - 68.5px);
     background-color: rgb(234, 233, 233);
     border: bisque;
-    height: 100px;
-    padding: 15px;
+    border-radius: 10px;
+    height: 120px;
+    padding: 18px;
     margin-bottom: 35px;
     margin-left: 17.5px;
   }
@@ -469,30 +534,42 @@ body {
 /* Mobile Responsive Design - Home Page */
 @media screen and (max-width: 768px) {
   .hero {
-    height: 70vh;
+    height: 55vh;
   }
 
   .hero-overlay {
     top: -80px;
   }
 
+  .hero-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 75px;
+  }
+
   .hero-content {
-    padding: 15px;
+    padding: 12px;
     text-align: center;
     max-width: 100%;
   }
 
   .hero-content h3 {
-    font-size: 16px;
+    font-size: 12px;
+    color: #000;
   }
 
   .hero-content h1 {
-    font-size: 32px;
+    font-size: 22px;
   }
 
   .hero-content p {
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 10px;
+    color: #000;
   }
 
   .hero-buttons {
@@ -501,17 +578,25 @@ body {
   }
 
   .explore-btn {
-    padding: 10px 20px;
-    font-size: 12px;
+    padding: 5px 10px;
+    font-size: 10px;
   }
 
   .watch-btn {
-    font-size: 14px;
+    font-size: 10px;
+    height: 40px;
   }
 
   .play-icon {
     width: 30px;
     height: 30px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
   }
 
   .countries {
@@ -615,33 +700,34 @@ body {
   .contact-image img {
     max-width: 100%;
     height: 300px;
-    margin-left: 34px;
+    margin-left: 10px;
   }
 
   .contact-form {
     width: 95%;
     height: auto;
-    padding: 15px 10px 15px 15px;
+    padding: 15px 5px 15px 15px;
   }
 
   .contact-form .name-input,
   .contact-form .email-phone-row .email-input,
   .contact-form .email-phone-row .phone-input {
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 20px;
     font-size: 14px;
   }
 
+
   .contact-form .email-phone-row {
     display: flex;
-    width: calc(100% - 33.5px);
+    width: calc(100% - 20.5px);
     gap: 10px;
     flex-direction: column;
   }
 
   .contact-form .message-input {
     height: 80px;
-    padding: 10px;
+    padding: 15px;
     font-size: 14px;
   }
 

@@ -7,7 +7,6 @@ const AboutPage = () => {
       {/* Hero Section */}
       <section className="about-hero-section" style={{ backgroundImage: `url('/path-to-hero-image.jpg')` }}>
         <div className="about-hero-overlay">
-          <h1>About</h1>
         </div>
       </section>
 

@@ -15,7 +15,7 @@
   }
 
   .about-hero-overlay {
-    background-image: url("../images/contact.png"); /* Background image for overlay */
+    background-image: url("../images/ABOUT.jpg"); /* Background image for overlay */
     background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text contrast */
     position: relative;
     top: 0;
@@ -45,10 +45,11 @@
   }
   
   .about-content h2 {
-    font-size: 36px; /* Large font size for heading */
+    font-size: 38px; /* Large font size for heading */
     font-weight: bold;
     color: #d32f2f; /* Red color for heading */
     margin-bottom: 0px; /* Space below heading */
+    font-weight: bolder;
     margin-top: 0px;
   }
   
@@ -56,7 +57,9 @@
     font-size: 26px; /* Standard font size for paragraphs */
     color: #333; /* Dark gray text color */
     line-height: 1.2;
+    text-align: justify;
     margin-top: 0px;
+    font-weight: 500;
     margin-bottom: 20px; /* Space between paragraphs */
   }
   
@@ -64,8 +67,8 @@
     background-color: #d32f2f; /* Red background for the banner */
     color: #fff; /* White text for contrast */
     text-align: center;
-    padding: 20px 90px;
-    font-size: 48px;
+    padding: 30px 90px;
+    font-size: 54px;
     margin: 0px 90px;
     font-weight: bold;
     border-radius: 10px; /* Rounded corners for the banner */
