@@ -534,7 +534,7 @@ body {
 /* Mobile Responsive Design - Home Page */
 @media screen and (max-width: 768px) {
   .hero {
-    height: 55vh;
+    height: 50vh;
   }
 
   .hero-overlay {
