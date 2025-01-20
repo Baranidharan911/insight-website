@@ -2,12 +2,23 @@
 .home-header {
   display: flex;
   justify-content: space-between; /* This flexes logo-nav and contacts-section */
+  justify-content: space-between; /* This flexes logo-nav and contacts-section */
   align-items: center;
   padding: 15px 40px;
   background-color: transparent;
   color: #fff;
+  background-color: transparent;
+  color: #fff;
   position: relative;
   z-index: 100;
+}
+
+/* Logo and Nav Combined Section */
+.logo-nav {
+  display: flex;
+  align-items: center;
+  gap: 35px; /* Space between logo and nav */
+  flex: 1; /* Allows this section to take available space */
 }
 
 /* Logo and Nav Combined Section */
@@ -26,11 +37,13 @@
 
 .logo-image {
   width: 300px;
+  width: 300px;
 }
 
 /* Navigation Menu */
 .nav {
   display: flex;
+  align-items: center;
   align-items: center;
 }
 
@@ -40,6 +53,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .nav ul li a {
@@ -47,9 +62,13 @@
   color: red;
   font-size: 18px;
   font-weight: bold;
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .nav ul li a:hover {
+  color: #fff;
   color: #fff;
 }
 
@@ -59,10 +78,13 @@
   align-items: center;
   gap: 15px;
   margin-left: auto; /* Pushes contact section to the right */
+  margin-left: auto; /* Pushes contact section to the right */
 }
 
 .contacts-section p {
   margin: 0;
+  color: red;
+  font-weight: bold;
   color: red;
   font-weight: bold;
 }
@@ -72,7 +94,9 @@
   background-color: #fff;
   color: #000;
   padding: 8px 10px;
+  padding: 8px 10px;
   border-radius: 5px;
+  font-size: 12px;
   font-size: 12px;
   cursor: pointer;
   border: none;
@@ -81,6 +105,65 @@
 .consultation-btn:hover {
   background-color: #ffe600;
 }
+
+/* Hamburger Menu */
+.hamburgers {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25px;
+  cursor: pointer;
+}
+
+.hamburgers .line {
+  height: 3px;
+  width: 30px;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hamburgers {
+    display: flex;
+  }
+
+  .logo-image{
+    width: 230px;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .nav ul li a:hover {
+    color: #e50a0a;
+  }
+
+  .nav.open {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contacts-section {
+    display: none;
+  }
+
+  .logo-nav {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 5px;
+  }
+}
+
 
 /* Hamburger Menu */
 .hamburgers {
@@ -155,7 +238,7 @@
   .hamburgers {
     display: flex;
     position: relative;
-    bottom: -15px;
+    bottom: -10px;
   }
 
   /* Navigation Menu */

@@ -146,7 +146,6 @@
     justify-content: start; /* Center the card horizontally */
     align-items: flex-start; /* Align content to the top */
     margin-top: 120px; /* Add spacing above the card */
-    width: 50%;
   }
   
   .details-card {
@@ -154,9 +153,9 @@
     color: #fff; /* White text */
     padding: 30px;
     border-radius: 30px; /* Rounded corners */
-    height: 350px;
-    width:50%;
-    max-width: 1300px; 
+    height: 330px;
+    width: 100%; /* Full width of container */
+    max-width: 1050px; /* Limit maximum width for the card */
   }
   
   /* Individual Item Styling */
@@ -234,56 +233,149 @@
   
 /* Mobile Responsive Design - Contact Page */
 @media screen and (max-width: 768px) {
+  /* Hero Section */
   .heros-overlay h1 {
-    font-size: 40px;
-    margin: 150px 20px;
-  }
-
-  .hero-section{
-    height: 50vh;
-  }
-
-  .gets-in-touch {
+    font-size: 32px;
+    margin: 0;
     padding: 20px;
-    display: flex;
+  }
+
+  .hero-section {
+    height: 40vh;
+  }
+
+  /* Form Section */
+  .gets-in-touch {
+    padding: 15px;
     flex-direction: column;
-    align-items: center;
+    gap: 30px;
   }
 
   .form-container {
-    max-width: 100%;
+    margin-left: 0;
+    padding: 0 15px 0 15px;
+    width: 95%;
   }
 
+  .form-container h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .form-container p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  /* Form Elements */
   .forms-row {
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
   }
 
   .forms-row input {
-    width: 90.5%;
+    width: 90%;
+    padding: 12px;
+    font-size: 14px;
   }
 
-  .subject-input{
-    width: 90.5%;
+  .subject-input,
+  .messages-input {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    font-size: 14px;
   }
 
-  .messages-input{
-    width: 90.5%;
+  .messages-input {
+    height: 120px;
+  }
+
+  .submits-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  /* Contact Details Card */
+  .contact-details {
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
   }
 
   .details-card {
     padding: 20px;
     height: auto;
-    width: 290px;
-    position: relative;
-    top: -45px;
+    width: 85%;
+    border-radius: 20px;
   }
 
   .details-heading {
-    font-size: 28px;
+    font-size: 24px;
+  }
+
+  .details-heading h5 {
+    font-size: 20px;
+    margin: 3px 0;
+  }
+
+  .details-item {
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+
+  .details-icon {
+    width: 40px;
+  }
+
+  .details-item p {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+
+  .detail-item h5 {
+    font-size: 20px;
+  }
+
+  /* Social Icons */
+  .socials-icons {
+    gap: 8px;
+  }
+
+  .socials-icons a img {
+    width: 36px;
+  }
+
+  /* Map Section */
+  .map-section {
+    padding: 5px 0;
   }
 
   .map-section iframe {
-    height: 300px;
+    height: 250px;
+  }
+}
+
+/* Additional breakpoint for smaller phones */
+@media screen and (max-width: 480px) {
+  .heros-overlay h1 {
+    font-size: 28px;
+  }
+
+  .details-card {
+    width: 90%;
+  }
+
+  .details-heading {
+    font-size: 22px;
+  }
+
+  .socials-icons a img {
+    width: 32px;
+  }
+
+  .map-section iframe {
+    height: 200px;
   }
 }

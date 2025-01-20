@@ -102,81 +102,52 @@ body {
 
 /* Watch Button Styling */
 .watch-btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: transparent;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-}
-
-.play-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border: solid 2px #fff;
-  border-radius: 50%;
-}
-
-.play-icon::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 10px solid #fff;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-}
-
-.watch-btn:hover {
-  color: #ffe600;
-}
-
-.watch-btn:hover .play-icon {
-  border-color: #ffe600;
-}
-
-.watch-btn:hover .play-icon::after {
-  border-left-color: #ffe600;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .hero-content {
-      max-width: 60%;
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    gap: 10px; /* Space between play icon and text */
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* White text */
+    font-size: 16px; /* Font size for text */
+    font-weight: bold; /* Bold text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
   }
   
-  .hero-content h1 {
-      font-size: 48px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-overlay {
-      flex-direction: column;
-      padding: 20px;
-  }
-  
-  .hero-content {
-      max-width: 100%;
-      text-align: center;
+  /* Play Icon Styling */
+  .play-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Width of circular icon */
+    height: 40px; /* Height of circular icon */
+    border: solid 2px #fff; /* White border for the circle */
+    border-radius: 50%; /* Make it circular */
+    
   }
   
-  .hero-side-image {
-      max-width: 80%;
-      margin-top: 30px;
+  .play-icon::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #fff; /* White triangle for play icon */
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
   }
   
-  .hero-buttons {
-      justify-content: center;
+  /* Hover Effect for Button */
+  .watch-btn:hover {
+    color: #ffe600; /* Yellow text on hover */
   }
-}
-
+  
+  .watch-btn:hover .play-icon {
+    border-color: #ffe600; /* Yellow border for play icon on hover */
+  }
+  
+  .watch-btn:hover .play-icon::after {
+    border-left-color: #ffe600; /* Yellow triangle on hover */
+  }
+     
   
 /* Countries Section */
 .countries {
@@ -526,30 +497,42 @@ body {
 /* Mobile Responsive Design - Home Page */
 @media screen and (max-width: 768px) {
   .hero {
-    height: 70vh;
+    height: 50vh;
   }
 
   .hero-overlay {
     top: -80px;
   }
 
+  .hero-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 75px;
+  }
+
   .hero-content {
-    padding: 15px;
+    padding: 12px;
     text-align: center;
     max-width: 100%;
   }
 
   .hero-content h3 {
-    font-size: 16px;
+    font-size: 12px;
+    color: #000;
   }
 
   .hero-content h1 {
-    font-size: 32px;
+    font-size: 22px;
   }
 
   .hero-content p {
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 10px;
+    color: #000;
   }
 
   .hero-buttons {
@@ -558,17 +541,25 @@ body {
   }
 
   .explore-btn {
-    padding: 10px 20px;
-    font-size: 12px;
+    padding: 5px 10px;
+    font-size: 10px;
   }
 
   .watch-btn {
-    font-size: 14px;
+    font-size: 10px;
+    height: 40px;
   }
 
   .play-icon {
     width: 30px;
     height: 30px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
   }
 
   .countries {
@@ -672,33 +663,34 @@ body {
   .contact-image img {
     max-width: 100%;
     height: 300px;
-    margin-left: 34px;
+    margin-left: 10px;
   }
 
   .contact-form {
     width: 95%;
     height: auto;
-    padding: 15px 10px 15px 15px;
+    padding: 15px 5px 15px 15px;
   }
 
   .contact-form .name-input,
   .contact-form .email-phone-row .email-input,
   .contact-form .email-phone-row .phone-input {
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 20px;
     font-size: 14px;
   }
 
+
   .contact-form .email-phone-row {
     display: flex;
-    width: calc(100% - 33.5px);
+    width: calc(100% - 20.5px);
     gap: 10px;
     flex-direction: column;
   }
 
   .contact-form .message-input {
     height: 80px;
-    padding: 10px;
+    padding: 15px;
     font-size: 14px;
   }
 

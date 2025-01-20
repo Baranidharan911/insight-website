@@ -114,6 +114,8 @@ width: 200px;
   }
   .hamburger {
     display: flex;
+    position: relative;
+    left: 45px;
   }
 
   .consultation-btn {
