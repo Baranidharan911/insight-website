@@ -1,4 +1,7 @@
 /* Hero Section styles remain the same */
+.success-stories-page{
+  font-family: 'Poppins', sans-serif;
+}
 .success-stories-hero {
     background-size: cover;
     background-position: center;

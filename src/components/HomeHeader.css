@@ -4,6 +4,7 @@
   justify-content: space-between; /* This flexes logo-nav and contacts-section */
   justify-content: space-between; /* This flexes logo-nav and contacts-section */
   align-items: center;
+  font-family: 'Poppins', sans-serif;
   padding: 15px 40px;
   background-color: transparent;
   color: #fff;

@@ -1,6 +1,6 @@
 /* Hero Section */
 .countries-courses-page {
-    font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
     background-color: #fff;
   }
 .countries-courses-hero {
@@ -50,7 +50,8 @@
   .countries-courses-text-content p {
     font-size: 30px; /* Paragraph size */
     margin: 5px;
-    font-weight: 780;
+    text-align: justify;
+    /* font-weight: 780; */
     padding: 0px 70px;
   }
   
@@ -114,7 +115,7 @@
 .courses-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
+justify-content: center;
   justify-content: flex-start;
   gap: 20px;
 }
@@ -146,7 +147,7 @@
 
 .countries-courses-course-card h3 {
   color: #333;
-  font-size: 39px;
+  font-size: 30px;
   margin: 0;
   font-weight: 500;
   line-height: 1.4;

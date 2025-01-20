@@ -57,38 +57,38 @@ const CountriesAndCourses = () => {
               alt: "Engineering and Technology"
             },
             {
-              image: require('../images/course3.png'),
+              image: require('../images/it-service.png'),
               title: "Computer Science and IT",
               alt: "Computer Science and IT"
             },
             {
-              image: require('../images/course4.png'),
+              image: require('../images/cardiogram.png'),
               title: "Medicine and Healthcare",
               alt: "Medicine and Healthcare"
             },
             {
-              image: require('../images/course5.png'),
+              image: require('../images/money.png'),
               title: "Finance and Accounting",
               alt: "Finance and Accounting"
             },
             {
-              image: require('../images/course6.png'),
+              image: require('../images/exploratory-analysis.png'),
               title: "Data Science and Analytics",
               alt: "Data Science and Analytics"
             },
             {
-              image: require('../images/course7.png'),
+              image: require('../images/course9.png'),
               title: "Hospitality & Tourism Management",
               alt: "Hospitality and Tourism"
             },
             {
-              image: require('../images/course8.png'),
+              image: require('../images/course6.png'),
               title: "Law and Legal Studies",
               alt: "Law and Legal Studies"
             },
             {
-              image: require('../images/course9.png'),
-              title: "Design Management",
+              image: require('../images/course8.png'),
+              title: "Design Management (Fashion,Game,Interior)",
               alt: "Design Management"
             }
           ].map((course, index) => (
