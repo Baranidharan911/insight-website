@@ -321,6 +321,8 @@ body {
   .consultancy-text h2 {
     font-size: 38px; /* Larger font size for heading */
     text-align: justify;
+    margin-bottom: 5px;
+    margin-top: 10px;
     font-weight: bolder;
     color: #d32f2f; /* Red color for heading */
   }
@@ -328,7 +330,8 @@ body {
   .consultancy-text p {
     margin-top: 0px;
     line-height: 1.8; /* Increase line height for better readability */
-    font-size: 23px;
+    font-size: 20px;
+    margin: 5px;
     text-align: justify ;
   }
 

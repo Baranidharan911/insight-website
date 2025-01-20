@@ -107,11 +107,13 @@ const HomePage = () => {
             <div className="consultancy-text">
             <h2>Overseas Consultancy</h2>
             <p>
-                We provide expert guidance and comprehensive support for your study abroad journey. 
-                If you have no idea where to start, we offer free guidance and expert advice to help 
-                shape your educational journey. From selecting the right country and course to assisting 
-                with applications, financial aid, and pre-departure preparation, our team ensures a seamless experience.
-                With personalized solutions and ongoing support, we help turn your dream of studying overseas into reality.
+            Not sure where to start on your study abroad journey? Don’t stress—it’s completely okay if you have zero idea about the process! At Insight Educator & Abroad Services, we’re here to guide you every step of the way.
+            </p>
+            <p>
+            We don’t believe in pushing or forcing you into anything. Our consultations are about giving you the freedom to explore, ask questions, and make informed decisions at your own pace. Whether you're still figuring out which country or course is the best fit or simply want to know more, we’re more than happy to help!
+            </p>
+            <p>
+            Take our free counseling session to learn more. If you feel it’s the right fit for you, we’ll continue the process. If not, no worries—we’ll happily wish you the best of luck in your journey, wherever it takes you!
             </p>
             </div>
         </div>

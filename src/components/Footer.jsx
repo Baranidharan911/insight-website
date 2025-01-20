@@ -10,9 +10,7 @@ const Footer = () => {
         <div className="footer-left">
           <img src={require("../images/logo red.png")} alt="INSIGHT Logo" className="footer-logo" />
           <p>
-            We offer a plethora of opportunities for students <br/>who plan to pursue their higher 
-            education abroad.<br/>We allow students to enjoy not just top-notch<br/>academics and expert faculty, 
-            but also significantly<br/>greater employability after study.
+          Studying abroad offers more than just financial, academic, and career benefits. It’s a transformative experience that broadens your perspective on life, teaches you the true values of resilience and independence, and helps you grow stronger as an individual. By stepping into a new culture, you’ll not only gain knowledge but also invaluable life skills that will shape you for years to come.
           </p>
           {/* Social Media Icons */}
           <div className="social-icons">

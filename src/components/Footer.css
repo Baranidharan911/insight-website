@@ -11,7 +11,7 @@
   justify-content:center;
   padding: 20px 80px;
   margin: 0px ;
-  gap: 180px; /* Adjust spacing between sections */
+  gap: 120px; /* Adjust spacing between sections */
 }
 
 /* Left Section */
@@ -25,7 +25,7 @@
 }
 
 .footer-left p {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.6;
   color: black;
 }
@@ -49,6 +49,7 @@
 .footer-middle {
   display: flex;
   flex-direction: column;
+  width: 250px;
 }
 
 .footer-middle h3 {

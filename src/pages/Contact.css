@@ -19,7 +19,7 @@
 
 /* Hero Overlay */
 .heros-overlay {
-  background-image: url("../images/contact.jpg"); /* Background image for overlay */
+  background-image: url("../images/contact...\ \(1\).jpg"); /* Background image for overlay */
   background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text contrast */
   position: relative;
   top: 0;
@@ -34,6 +34,7 @@
   color: #fff; /* White text */
   font-size: 65px;
   margin: 350px;
+  margin-top: 600px;
   text-align: center;
 }
 

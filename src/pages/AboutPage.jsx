@@ -14,21 +14,19 @@ const AboutPage = () => {
       <section className="about-content">
         <h2>Insight Educator & Abroad Services</h2>
         <p>
-          Insight Educator & Abroad Services is a leading name in the field of overseas education, offering a 
-          comprehensive range of solutions with global partnerships and a strong national footprint. With over 
-          ten years of experience, we are committed to making international education more accessible and within reach. 
-          Our dedicated team extends its support across all South Indian branches, providing guidance at every step 
-          of your journey to study abroad.
+        Insight is the ability to understand something clearly, to see beyond the obvious, and to grasp the full picture. It’s about gaining deep knowledge and clarity in every situation.
         </p>
         <p>
-          As authorized representatives of more than 700 universities in 29 countries, we facilitate access to top 
-          academic destinations for international students, including the USA, UK, Australia, Canada, Ireland, New Zealand, 
-          and Europe. Our experts assist you in choosing the right institution that aligns with your academic ambitions 
-          from an extensive selection of options.
+        At Insight Educator & Abroad Services, we live by this principle in everything we do. Our founder, Neshika, who completed her education in the UK, brings firsthand experience to our services. With years of experience in the field and as an IELTS-certified trainer from Trinity University, Neshika and the team offer you professional guidance throughout your study-abroad journey.
         </p>
         <p>
-          Take advantage of our holistic overseas education services, which begin with helping you make informed choices 
-          about your study destination and continue through the admissions process, coaching for entrance exams (IELTS, TOEFL, GRE, GMAT, SAT), securing financial aid (education loans), and managing visa applications. With Insight Educator & Abroad Services, you’ll receive professional support and expert advice throughout your entire study-abroad journey.
+        We’ve successfully helped many students achieve their dreams of studying abroad, offering clear and thoughtful support every step of the way. From counselling and choosing the right university, to managing admissions, finance, visa processes, flight bookings, and accommodation, we take care of all the details. Whether it’s pre-arrival support or post-arrival guidance, including airport pickups, we make sure everything is smooth and stress-free.
+        </p>
+        <p>
+        We work with top universities across popular study destinations, including the USA, UK, Australia, Canada, Ireland, New Zealand, Europe, UAE, Singapore, and Malaysia. We offer a wide variety of courses to match your academic and career aspirations. And, we always ensure your options align with your preferences, never forcing you into limited choices. Additionally, we help students secure generous scholarships to reduce the financial burden, making quality education more accessible. We prioritize your preferences in the decision-making process, ensuring that your journey is tailored to your dreams and goals.
+        </p>
+        <p>
+        We pride ourselves on addressing all your questions—no matter how small—with professionalism, kindness, and understanding. We also welcome parents into our office to ensure they’re fully informed and confident in the process. Our goal is to make your journey to studying abroad a pleasant, easy, and successful one.
         </p>
       </section>
       <div className="cta-banner">

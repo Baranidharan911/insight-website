@@ -13,10 +13,9 @@ const CountriesAndCourses = () => {
 
       {/* Text Content Section */}
       <section className="countries-courses-text-content">
-        <h2>Insight English Educator & Abroad Services</h2>
+        <h2>Your Pathway to Global Education 🌍</h2>
         <p>
-          The Best and Most Affordable Countries for Your Overseas Education Dream. 
-          We are authorized representatives for over 700 universities across 25 countries.
+        No matter where you want to study, which university you dream of, or the course that excites you—we’re here to make it happen! From highly sought-after courses to specialized fields, we’ll guide you with options that align perfectly with your ambitions. "With endless possibilities worldwide, we’re here to help you find the perfect place to learn and grow."
         </p>
       </section>
 
