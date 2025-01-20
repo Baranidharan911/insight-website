@@ -102,52 +102,89 @@ body {
 
 /* Watch Button Styling */
 .watch-btn {
-    display: flex;
-    align-items: center; /* Align icon and text vertically */
-    gap: 10px; /* Space between play icon and text */
-    background-color: transparent; /* Transparent background */
-    color: #fff; /* White text */
-    font-size: 16px; /* Font size for text */
-    font-weight: bold; /* Bold text */
-    border: none; /* Remove border */
-    cursor: pointer; /* Pointer cursor on hover */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.play-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: solid 2px #fff;
+  border-radius: 50%;
+}
+
+.play-icon::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #fff;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.watch-btn:hover {
+  color: #ffe600;
+}
+
+.watch-btn:hover .play-icon {
+  border-color: #ffe600;
+}
+
+.watch-btn:hover .play-icon::after {
+  border-left-color: #ffe600;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-content {
+      max-width: 60%;
   }
   
-  /* Play Icon Styling */
-  .play-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px; /* Width of circular icon */
-    height: 40px; /* Height of circular icon */
-    border: solid 2px #fff; /* White border for the circle */
-    border-radius: 50%; /* Make it circular */
-    
+  .hero-content h1 {
+      font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-overlay {
+      flex-direction: column;
+      padding: 20px;
   }
   
-  .play-icon::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    border-left: 10px solid #fff; /* White triangle for play icon */
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
+  .hero-content {
+      max-width: 100%;
+      text-align: center;
   }
   
-  /* Hover Effect for Button */
-  .watch-btn:hover {
-    color: #ffe600; /* Yellow text on hover */
+  .hero-side-image {
+      width: 80%;
+      max-width: 300px;
+      margin-top: 0px;
+      display: none;
+  }
+
+  .hero-side-image img {
+    max-width: 150%;
+    height: 150px;
+    object-fit: fill;
   }
   
-  .watch-btn:hover .play-icon {
-    border-color: #ffe600; /* Yellow border for play icon on hover */
+  .hero-buttons {
+      justify-content: center;
   }
-  
-  .watch-btn:hover .play-icon::after {
-    border-left-color: #ffe600; /* Yellow triangle on hover */
-  }
-     
+}
+
   
 /* Countries Section */
 .countries {
