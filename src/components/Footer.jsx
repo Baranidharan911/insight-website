@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Left Section */}
         <div className="footer-left">
-          <img src={require("../images/logo.png")} alt="INSIGHT Logo" className="footer-logo" />
+          <img src={require("../images/logo red.png")} alt="INSIGHT Logo" className="footer-logo" />
           <p>
             We offer a plethora of opportunities for students <br/>who plan to pursue their higher 
             education abroad.<br/>We allow students to enjoy not just top-notch<br/>academics and expert faculty, 

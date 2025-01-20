@@ -40,7 +40,7 @@ const Contact = () => {
           <div className="details-card">
             {/* Head Office */}
             <div className="details-item">
-              <img src={require("../images/map.png")} alt="Map Icon" className="details-icon" />
+              <img src={require("../images/m.png")} alt="Map Icon" className="details-icon" />
               <div className="details-heading">
                 <h5>Head Office</h5>
                 <p>138-A, 8 St Cross Cut Road,<br/> Gandhipuram, Coimbatore.</p>
@@ -49,7 +49,7 @@ const Contact = () => {
 
             {/* Email */}
             <div className="details-item">
-              <img src={require("../images/message.png")} alt="Email Icon" className="details-icon" />
+              <img src={require("../images/me.png")} alt="Email Icon" className="details-icon" />
               <div className="details-heading">
                 <h5>Email us directly</h5>
                 <p>insighteducator09@gmail.com</p>
@@ -58,7 +58,7 @@ const Contact = () => {
 
             {/* Phone */}
             <div className="details-item">
-              <img src={require("../images/call.png")} alt="Phone Icon" className="details-icon" />
+              <img src={require("../images/c.png")} alt="Phone Icon" className="details-icon" />
               <div className="details-heading">
                 <h5>Phone</h5>
                 <p>+91 8270883451</p>
@@ -69,11 +69,11 @@ const Contact = () => {
             <div className="detail-item">
               <h5>Follow us</h5>
               <div className="socials-icons">
-                <a href="#"><img src={require("../images/fb.png")} alt="Facebook" /></a>
-                <a href="#"><img src={require("../images/x.png")} alt="Twitter" /></a>
-                <a href="#"><img src={require("../images/yt.png")} alt="YouTube" /></a>
-                <a href="#"><img src={require("../images/li.png")} alt="LinkedIn" /></a>
-                <a href="#"><img src={require("../images/i.png")} alt="Instagram" /></a>
+                <a href="#"><img src={require("../images/f.png")} alt="Facebook" /></a>
+                <a href="#"><img src={require("../images/t.png")} alt="Twitter" /></a>
+                <a href="#"><img src={require("../images/y.png")} alt="YouTube" /></a>
+                <a href="#"><img src={require("../images/l.png")} alt="LinkedIn" /></a>
+                <a href="#"><img src={require("../images/ig.png")} alt="Instagram" /></a>
               </div>
             </div>
           </div>

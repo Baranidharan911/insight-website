@@ -1,7 +1,7 @@
 /* Hero Section */
 .countries-courses-page {
     font-family: Arial, sans-serif;
-    background-color: #ebebeb;
+    background-color: #fff;
   }
 .countries-courses-hero {
     background-size: cover; /* Ensure the image covers the entire section */
@@ -16,7 +16,7 @@
   }
   
   .countries-courses-hero-overlay {
-    background-image: url("../images/os.png"); /* Background image for overlay */
+    background-image: url("../images/COUNTRY.jpg"); /* Background image for overlay */
     background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text contrast */
     position: relative;
     top: 0;
@@ -28,9 +28,10 @@
   
   .countries-courses-hero-overlay h1 {
     color: #fff; /* White text */
-    font-size: 48px; /* Large heading */
+    font-size: 58px; /* Large heading */
     margin-top: 42%;
     text-align: center;
+    font-weight: bolder;
   }
   
   /* Text Content Section */
@@ -71,13 +72,13 @@
   .countries-courses-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
-    gap: 25px; /* Space between cards */
+    gap: 35px; /* Space between cards */
   }
   
   /* Individual Country Card Styling */
   .countries-courses-country-card {
     background-color: #fff; /* White background for cards */
-    width: 230px;
+    width: 300px;
     height: 180px;
     border-radius: 15px; /* Rounded corners for a modern look */
     padding: 20px ;
@@ -96,31 +97,65 @@
 
 /* Courses Section */
 .countries-courses-courses-section {
-    padding: 40px 150px; /* Add spacing around the section */
-    background-color: #f9f9f9; /* Light gray background color */
-  }
-  
-  .countries-courses-courses-section h2 {
-    text-align: center;
-    font-size: 36px; /* Large heading size */
-    font-weight: bold;
-    color: #d32f2f; /* Red text for heading */
-    margin-bottom: 30px; /* Space below the heading */
-  }
-  
-  /* Grid Layout for Courses */
-  .courses-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Exactly 3 cards per row */
-    gap: 20px; 
-  }
+  padding: 40px 150px;
+  background-color: #d7d5d5;
+}
+
+.countries-courses-courses-section h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #d32f2f;
+  margin-bottom: 30px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.countries-courses-course-card {
+  background-color: #faf8f8;
+  border-radius: 35px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.countries-courses-course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.countries-courses-course-card img {
+  width: 300px;
+  height: 220px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.countries-courses-course-card h3 {
+  color: #333;
+  font-size: 39px;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
   
   /* Individual Course Card Styling */
   .countries-courses-course-card {
-    background-color: #d32f2f; /* Red background for cards */
-    border-radius: 25px; /* Rounded corners for a modern look */
+    background-color: #faf8f8; /* Red background for cards */
+    border-radius: 35px; /* Rounded corners for a modern look */
+    /* border: black solid 3px; */
     aspect-ratio: 3 / 3; /* Ensures square shape */
-    width: 380px;
+    width: 420px;
   }   
   
 /* Mobile Responsive Design - Countries and Courses Page */

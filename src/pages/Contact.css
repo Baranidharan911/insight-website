@@ -19,7 +19,7 @@
 
 /* Hero Overlay */
 .heros-overlay {
-  background-image: url("../images/contact.png"); /* Background image for overlay */
+  background-image: url("../images/contact.jpg"); /* Background image for overlay */
   background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text contrast */
   position: relative;
   top: 0;
@@ -41,14 +41,16 @@
 /* Get in Touch Section */
 .gets-in-touch {
     display: flex;
-    justify-content: center; /* Center the form horizontally */
+    justify-content: left; /* Center the form horizontally */
     align-items: flex-start; /* Align content to the top */
-    padding: 30px;
+    padding: 30px 0px;
+    gap: 80px;
   }
   
   .form-container {
     width: 100%; /* Full width of the container */
     max-width: 800px; /* Limit maximum width */
+    margin-left:180px;
   }
   
   .form-container h2 {
@@ -144,6 +146,7 @@
     justify-content: start; /* Center the card horizontally */
     align-items: flex-start; /* Align content to the top */
     margin-top: 120px; /* Add spacing above the card */
+    width: 50%;
   }
   
   .details-card {
@@ -151,9 +154,9 @@
     color: #fff; /* White text */
     padding: 30px;
     border-radius: 30px; /* Rounded corners */
-    height: 330px;
-    width: 100%; /* Full width of container */
-    max-width: 1050px; /* Limit maximum width for the card */
+    height: 350px;
+    width:50%;
+    max-width: 1300px; 
   }
   
   /* Individual Item Styling */
@@ -173,7 +176,7 @@
   }
   
   .details-icon {
-    width: 45px; /* Icon size */
+    width: 55PX;/* Icon size */
     height: auto; /* Maintain aspect ratio */
   }
   
@@ -184,18 +187,18 @@
   }
 
   .details-item p{
-    font-size: 13px;
+    font-size: 16px;
     margin: 5px;
   }
 
   .detail-item h5{
-    font-size: 23px;
+    font-size: 26px;
     margin: 1px;
 
   }
 
   .details-heading h5{
-    font-size: 23px;
+    font-size: 26px;
     margin: 5px;
     font-weight: bold;
   }
@@ -208,7 +211,7 @@
   }
   
   .socials-icons a img {
-    width: 40px; /* Icon size for social media icons */
+    width: 48px; /* Icon size for social media icons */
   }    
   
   /* Map Section */
@@ -222,7 +225,7 @@
   
   .map-section iframe {
     width: 100%; /* Map takes up 90% of the screen width */
-    max-width: 1477px; /* Limit maximum width for larger screens */
+    max-width: 1685px; /* Limit maximum width for larger screens */
     height: 450px; /* Fixed height for the map */
     border: none; /* Remove default iframe border */
     border-radius: 0px; /* Rounded corners for the map */

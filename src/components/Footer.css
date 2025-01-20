@@ -8,10 +8,10 @@
 /* Footer Main Content */
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   padding: 20px 80px;
-  margin: 0 40px;
-  gap: 0px; /* Adjust spacing between sections */
+  margin: 0px ;
+  gap: 180px; /* Adjust spacing between sections */
 }
 
 /* Left Section */
@@ -21,7 +21,7 @@
 }
 
 .footer-logo {
-  max-width: 200px; /* Adjust logo size */
+  max-width: 250px; /* Adjust logo size */
 }
 
 .footer-left p {
@@ -120,7 +120,7 @@
 .footer-combined{
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  gap: 150px;
 }
 
 /* Footer Mobile Responsive */
