@@ -41,7 +41,7 @@
   }
   
   .success-stories-video-section h2 {
-    color: #b91c1c;
+    color: #e01111;
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: bold;
@@ -113,7 +113,7 @@
   .pagination-box {
     width: 230px;
     height: 75px;
-    background-color: #dc2626;
+    background-color: #e01111;
     position: relative;
     border-radius: 8px;
     overflow: hidden;
@@ -144,7 +144,7 @@
   
   .nav-arrow {
     background-color: #f5f5f5;
-    color: #b91c1c;
+    color: #e01111;
     border: none;
     width: 40px;
     height: 40px;

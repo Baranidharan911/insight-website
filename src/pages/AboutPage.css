@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
 .about-page {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     background-color: #ffff;
   }
 .about-hero-section {
@@ -41,34 +44,35 @@
     justify-content: flex-start;
     align-items: start;
     max-width: 100%; /* Limit the width of the content */
-    line-height: 1.8; /* Improve readability */
+    line-height: 1.2; /* Improve readability */
   }
   
   .about-content h2 {
     font-size: 38px; /* Large font size for heading */
     font-weight: bold;
-    color: #d32f2f; /* Red color for heading */
+    color: #e01111; /* Red color for heading */
     margin-bottom: 0px; /* Space below heading */
     font-weight: bolder;
-    margin-top: 0px;
+    margin: 5px;
   }
   
   .about-content p {
-    font-size: 24px; /* Standard font size for paragraphs */
+    font-size: 20px; /* Standard font size for paragraphs */
     color: #333; /* Dark gray text color */
-    line-height: 1.2;
+    line-height: 1.1;
     text-align: justify;
-    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    margin-bottom: 20px; /* Space between paragraphs */
+    margin-top: 0px;
+    margin-bottom: 10px; /* Space between paragraphs */
   }
   
   .cta-banner {
-    background-color: #d32f2f; /* Red background for the banner */
+    background-color: #e01111; /* Red background for the banner */
     color: #fff; /* White text for contrast */
     text-align: center;
-    padding: 30px 90px;
-    font-size: 52px;
+    padding: 30px 25px;
+    font-size: 46px;
     margin: 0px 90px;
     font-weight: bold;
     border-radius: 10px; /* Rounded corners for the banner */
@@ -76,70 +80,76 @@
 
 /* Our Services Section */
 .our-services {
-    padding: 30px 40px; /* Add spacing around the section */
-    background-color: #fff; /* Light background color */
-  }
-  
-  .our-services h2 {
-    text-align: center;
-    font-size: 36px; /* Large heading size */
-    font-weight: bold;
-    color: #d32f2f; /* Red color for heading */
-    margin-top: 0px;
-    margin-bottom: 40px; /* Space below the heading */
-  }
-  
-  /* Services Grid Layout */
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid layout */
-    gap: 50px; /* Space between cards */
-  }
-  
-  /* Individual Service Card Styling */
-  .service-card {
-    background-color: lightgrey; /* White background for cards */
-    border-radius: 0px; 
-    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  */
-    display: flex;
-    flex-direction: column; /* Stack heading, image, and text vertically */
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px;
-  }
-  
-  .service-card h3 {
-    font-size: 20px; /* Heading size */
-    font-weight: bold;
-    text-align: center;
-    color: #d32f2f; /* Red color for headings */
-    margin-bottom: 15px; /* Space below heading */
-  }
-  
-  .service-card img {
-    width: 250px; /* Fixed size for icons */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 15px; /* Space below the icon */
-  }
-  
-  .service-card h3 {
-    font-size: 38px; /* Heading size */
-    line-height: 1;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #d32f2f; /* Red color for headings */
-    margin-bottom: 10px;
-  }
-  
-  .service-card p {
-    font-size: 32px;
-    text-align: justify;
-    color: #555; /* Dark gray text for descriptions */
-  }
+  padding: 60px 150px; /* Add spacing around the section */
+  background-color: #fff; /* Light background color */
+}
+
+.our-services h2 {
+  text-align: center;
+  font-size: 36px; /* Large heading size */
+  font-weight: bold;
+  color: #e01111; /* Red color for heading */
+  margin-top: 0px;
+  margin-bottom: 50px; /* Space below the heading */
+}
+
+/* Services Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two cards per row */
+  gap: 50px; /* Space between cards */
+}
+
+/* Individual Service Card Styling */
+.service-card {
+  display: flex;
+  background-color: #f1e2e2; /* Light gray background for cards */
+  border-radius: 10px; /* Rounded corners */
+  padding: 0px;
+  align-items: center; /* Align items in the center */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
+  gap: 0px; /* Space between icon and text */
+}
+
+/* Service Card Icon Styling */
+.service-card img {
+  width: 65px; /* Icon size */
+  height: 65px;
+  position: relative;
+  top: -120px;
+  right: 35px;
+  border-radius: 50%; /* Circular icon */
+  background: none; /* White background for icons */
+  padding: 10px; /* Inner spacing for the icon */
+}
+
+/* Service Card Text Styling */
+.service-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card h3 {
+  font-size: 34px; /* Heading size */
+  font-weight: bold;
+  color: #e01111; /* Red color for headings */
+  margin-bottom: 0px; /* Space below heading */
+  margin-top: 2px;
+}
+
+.service-card p {
+  font-size: 26px; /* Text size */
+  color: #555; /* Dark gray text */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin: 8px;
+  line-height: 1.1; /* Better readability */
+}
+
   
   /* Red Empty Container */
 .red-container {
-  background-color: #d32f2f; /* Red background */
+  background-color: #e01111; /* Red background */
   height: 10px; /* Adjust height as needed */
   width: 100%; /* Full width of the screen */
 }
@@ -175,20 +185,40 @@
     margin: 0px 20px;
   }
 
+  .our-services {
+    padding: 60px 30px;
+    background-color: #fff;
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 50px; /* Slightly increase gap for better spacing */
+    justify-content: center;
+    max-width: 1000px;
+  }
+  
+  .service-card img {
+    width: 50px; /* Smaller size for mobile */
+    height: 50px;
+    top: -70px;
+    right: 25px;
   }
 
-  .service-card img{
-    width: 150px;
+  .service-card {
+    display: flex;
+    background-color: #f1e2e2;
+    border-radius: 10px;
+    padding: 0px;
+    align-items: center;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    gap: 0px;
   }
-
+  
   .service-card h3 {
-    font-size: 23px;
+    font-size: 20px; /* Slightly smaller font for mobile */
   }
-
+  
   .service-card p {
-    font-size: 20px;
+    font-size: 16px; /* Adjust for readability */
   }
 }

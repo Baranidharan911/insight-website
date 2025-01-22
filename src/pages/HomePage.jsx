@@ -55,7 +55,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className="hero-side-image">
-                        <img src={require("../images/h-image.png")} alt="Hero Side" />
+                        <img src={require("../images/h-images.png")} alt="Hero Side" />
                     </div>
                 </div>
             </div>

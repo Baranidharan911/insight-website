@@ -35,79 +35,82 @@ const AboutPage = () => {
 
       {/* Our Services Section */}
       <section className="our-services">
-        <h2>Our Services</h2>
-        <div className="services-grid">
-          {/* Service Cards */}
-          {[
-            {
-              title: "Counselling & Guidance",
-              icon: "/images/cg.png",
-              description:
-                "Studying abroad can be overwhelming, but we're here to make it easier. Whether you're exploring or ready to take the leap, our expert team will guide you every step, offering support without pressure at any stage.",
-            },
-            {
-              title: "Application Process",
-              icon: "/images/ap.png",
-              description:
-                "We make the application process simple and hassle-free, handling everything from document collection to form submission, ensuring your application stands out.",
-            },
-            {
-              title: "SOP Writing",
-              icon: "/images/sop.png",
-              description:
-                "A strong Statement of Purpose (SOP) is crucial for a successful application. We carefully craft your SOP to highlight your strengths, experiences, and goals, presenting your story in the most compelling way.",
-            },
-            {
-              title: "Pre Arrival Guidance",
-              icon: "/images/pa.png",
-              description:
-                "Our pre-arrival guidance prepares you for your new adventure, offering tips on what to buy, what to expect, and cultural insights to ensure you're ready for life in a new country.",
-            },
-            {
-              title: "Accommodation Arrangements",
-              icon: "/images/aa.png",
-              description:
-                "We offer affordable accommodation options that fit your needs and budget, ensuring you're comfortably settled before you arrive.",
-            },
-            {
-              title: "Country and Course Selection",
-              icon: "/images/cc.png",
-              description:
-                "Choosing the right country and course can be challenging. We help you find the best fit based on your interests, goals, and future prospects, ensuring your education is a valuable investment.",
-            },
-            {
-              title: "Financial Support",
-              icon: "/images/fs.png",
-              description:
-                "We assist with collateral and non-collateral loans, connecting you with trusted partners to find affordable financial solutions, making education funding stress-free.",
-            },
-            {
-              title: "Flight Tickets Booking",
-              icon: "/images/ftb.png",
-              description:
-                "We help you find the best flight deals that fit your budget, ensuring you travel with peace of mind. Our expert team knows how to get the best value for your money. We'll make sure your journey is comfortable and cost-effective.",
-            },
-            {
-              title: "Part Time Job Assistance",
-              icon: "/images/ptj.png",
-              description:
-                "We help you find part-time job opportunities that fit your skills and schedule, allowing you to gain experience, support yourself, and start building your career before graduation.",
-            },
-            {
-              title: "Post Arrival Support",
-              icon: "/images/pas.png",
-              description:
-                "We provide essential post-arrival support including airport pickup and local guidance to help you settle in smoothly.",
-            },
-          ].map((service) => (
-            <div key={service.title} className="service-card">
+      <h2>Our Services</h2>
+      <div className="services-grid">
+        {/* Service Cards */}
+        {[
+          {
+            title: "Counselling & Guidance",
+            icon: "/images/cg.png",
+            description:
+              "Studying abroad can be overwhelming, but we're here to make it easier. Whether you're exploring or ready to take the leap, our expert team will guide you every step, offering support without pressure at any stage.",
+          },
+          {
+            title: "Application Process",
+            icon: "/images/ap.png",
+            description:
+              "We make the application process simple and hassle-free, handling everything from document collection to form submission, ensuring your application stands out.",
+          },
+          {
+            title: "SOP Writing",
+            icon: "/images/sop.png",
+            description:
+              "A strong Statement of Purpose (SOP) is crucial for a successful application. We carefully craft your SOP to highlight your strengths, experiences, and goals, presenting your story in the most compelling way.",
+          },
+          {
+            title: "Pre Arrival Guidance",
+            icon: "/images/pa.png",
+            description:
+              "Our pre-arrival guidance prepares you for your new adventure, offering tips on what to buy, what to expect, and cultural insights to ensure you're ready for life in a new country.",
+          },
+          {
+            title: "Accommodation Arrangements",
+            icon: "/images/aa.png",
+            description:
+              "We offer affordable accommodation options that fit your needs and budget, ensuring you're comfortably settled before you arrive.",
+          },
+          {
+            title: "Country and Course Selection",
+            icon: "/images/cc.png",
+            description:
+              "Choosing the right country and course can be challenging. We help you find the best fit based on your interests, goals, and future prospects, ensuring your education is a valuable investment.",
+          },
+          {
+            title: "Financial Support",
+            icon: "/images/fs.png",
+            description:
+              "We assist with collateral and non-collateral loans, connecting you with trusted partners to find affordable financial solutions, making education funding stress-free.",
+          },
+          {
+            title: "Flight Tickets Booking",
+            icon: "/images/ftb.png",
+            description:
+              "We help you find the best flight deals that fit your budget, ensuring you travel with peace of mind. Our expert team knows how to get the best value for your money. We'll make sure your journey is comfortable and cost-effective.",
+          },
+          {
+            title: "Part Time Job Assistance",
+            icon: "/images/ptj.png",
+            description:
+              "We help you find part-time job opportunities that fit your skills and schedule, allowing you to gain experience, support yourself, and start building your career before graduation.",
+          },
+          {
+            title: "Post Arrival Support",
+            icon: "/images/pas.png",
+            description:
+              "We provide essential post-arrival support including airport pickup and local guidance to help you settle in smoothly.",
+          },
+        ].map((service) => (
+          <div key={service.title} className="service-card">
+            <img src={service.icon} alt={`${service.title} Icon`} />
+            <div className="service-card-content">
               <h3>{service.title}</h3>
-              <img src={service.icon} alt={service.title} />
               <p>{service.description}</p>
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        ))}
+      </div>
+    </section>
+
       <div className="red-container"></div>
 
 

@@ -84,7 +84,7 @@ const Contact = () => {
       <section className="map-section">
         <iframe
           title="Google Map"
-          src="https://www.google.com/maps/embed?pb=your-map-link"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.9283498145067!2d76.95592231533455!3d11.011841292159867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8593ff4af2db9%3A0x88ab2d8c74a11e6a!2sSri%20Ramakrishna%20Engineering%20College!5e0!3m2!1sen!2sin!4v1678176453827!5m2!1sen!2sin"
           width="100%"
           height="400"
           style={{ border: "0" }}
@@ -92,6 +92,7 @@ const Contact = () => {
           loading="lazy"
         ></iframe>
       </section>
+
 
       {/* Footer */}
       <footer className="footer">

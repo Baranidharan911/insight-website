@@ -58,7 +58,7 @@
     font-size: 36px; /* Larger heading size */
     font-weight: bold;
     margin-bottom: 10px;
-    color: #d32f2f; /* Red heading */
+    color: #e01111; /* Red heading */
   }
   
   .form-container p {
@@ -124,7 +124,7 @@
     
 /* Submit Button Styling */
 .submits-btn {
-    background-color: #d32f2f; /* Red button background */
+    background-color: #e01111; /* Red button background */
     color: #fff; /* White text */
     padding: 15px 10px; /* Padding for button size */
     font-size: 16px; /* Font size for button text */
@@ -136,7 +136,7 @@
   }
   
   .submits-btn:hover {
-    background-color: #b71c1c; /* Darker red on hover */
+    background-color: #e01111; /* Darker red on hover */
   }
    
   
@@ -150,13 +150,13 @@
   }
   
   .details-card {
-    background-color: #d32f2f; /* Red background for the card */
+    background-color: #e01111; /* Red background for the card */
     color: #fff; /* White text */
     padding: 30px;
     border-radius: 30px; /* Rounded corners */
-    height: 330px;
-    width: 100%; /* Full width of container */
-    max-width: 1050px; /* Limit maximum width for the card */
+    height: auto;
+    width: 80%; /* Full width of container */
+    max-width: 900px; /* Limit maximum width for the card */
   }
   
   /* Individual Item Styling */
@@ -216,7 +216,7 @@
   
   /* Map Section */
 .map-section {
-    background-color: #d32f2f; /* Red background for the section */
+    background-color: #e01111; /* Red background for the section */
     padding: 10px 0; /* Space above and below the map */
     display: flex;
     justify-content: center;
@@ -239,6 +239,12 @@
     font-size: 32px;
     margin: 0;
     padding: 20px;
+  }
+
+  .heros-overlay {
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
   }
 
   .hero-section {

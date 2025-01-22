@@ -39,8 +39,16 @@ const HomeHeader = () => {
       {/* Contact Section */}
       <div className="contacts-section">
         <p>+91 8270883451</p>
-        <button className="consultation-btn">Get a Free<br />Consultation →</button>
+        <a
+          href="https://wa.me/918270883451" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="consultation-btn"
+        >
+          Get a Free<br />Consultation →
+        </a>
       </div>
+
     </header>
   );
 };

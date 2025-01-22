@@ -47,47 +47,47 @@ const CountriesAndCourses = () => {
         <div className="courses-grid">
           {[
             {
-              image: require('../images/online.png'),
+              image: require('../images/Course icons-08.png'),
               title: "Business and Management",
               alt: "Business and Management"
             },
             {
-              image: require('../images/course2.png'),
+              image: require('../images/Course icons-08.png'),
               title: "Engineering and Technology",
               alt: "Engineering and Technology"
             },
             {
-              image: require('../images/it-service.png'),
+              image: require('../images/Course icons-09.png'),
               title: "Computer Science and IT",
               alt: "Computer Science and IT"
             },
             {
-              image: require('../images/cardiogram.png'),
+              image: require('../images/Course icons-06.png'),
               title: "Medicine and Healthcare",
               alt: "Medicine and Healthcare"
             },
             {
-              image: require('../images/money.png'),
+              image: require('../images/Course icons-07.png'),
               title: "Finance and Accounting",
               alt: "Finance and Accounting"
             },
             {
-              image: require('../images/exploratory-analysis.png'),
+              image: require('../images/Course icons-05.png'),
               title: "Data Science and Analytics",
               alt: "Data Science and Analytics"
             },
             {
-              image: require('../images/course9.png'),
+              image: require('../images/Course icons-04.png'),
               title: "Hospitality & Tourism Management",
               alt: "Hospitality and Tourism"
             },
             {
-              image: require('../images/course6.png'),
+              image: require('../images/Course icons-02.png'),
               title: "Law and Legal Studies",
               alt: "Law and Legal Studies"
             },
             {
-              image: require('../images/course8.png'),
+              image: require('../images/Course icons-03.png'),
               title: "Design Management (Fashion,Game,Interior)",
               alt: "Design Management"
             }

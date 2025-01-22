@@ -34,7 +34,16 @@ const DefaultHeader = () => {
         </nav>
 
         {/* Button (hidden in mobile view) */}
-        <button className="consultation-btn">Get a Free →</button>
+        <div className="contacts-section">
+          <a
+            href="https://wa.me/918270883451" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="consultation-btn"
+          >
+            Get a Free →
+          </a>
+        </div>
       </div>
     </header>
   );
