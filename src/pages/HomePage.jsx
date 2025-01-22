@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import c1 from "../images/c1.png";
 import c2 from "../images/c2.png";
 import c3 from "../images/c3.png";
@@ -48,10 +49,12 @@ const HomePage = () => {
                             covering everything from admission to accommodation & travel.
                         </p>
                         <div className="hero-buttons">
+                        <Link to="/countries-courses">
                             <button className="explore-btn">Explore Courses</button>
-                            <button className="watch-btn">
-                                <span className="play-icon"></span> Watch it Now
-                            </button>
+                        </Link>
+                        <button className="watch-btn">
+                            <span className="play-icon"></span> Watch it Now
+                        </button>
                         </div>
                     </div>
                     <div className="hero-side-image">

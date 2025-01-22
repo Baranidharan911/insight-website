@@ -96,7 +96,7 @@
 /* Services Grid Layout */
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two cards per row */
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
   gap: 50px; /* Space between cards */
 }
 
@@ -106,7 +106,6 @@
   background-color: #f1e2e2; /* Light gray background for cards */
   border-radius: 10px; /* Rounded corners */
   padding: 0px;
-  align-items: center; /* Align items in the center */
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
   gap: 0px; /* Space between icon and text */
 }
@@ -116,7 +115,7 @@
   width: 65px; /* Icon size */
   height: 65px;
   position: relative;
-  top: -120px;
+  top: -35px;
   right: 35px;
   border-radius: 50%; /* Circular icon */
   background: none; /* White background for icons */
@@ -138,7 +137,7 @@
 }
 
 .service-card p {
-  font-size: 26px; /* Text size */
+  font-size: 22px; /* Text size */
   color: #555; /* Dark gray text */
   font-family: 'Poppins', sans-serif;
   font-weight: 400;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./DefaultHeader.css";
+import { Link } from "react-router-dom";
 
 const DefaultHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,8 +11,10 @@ const DefaultHeader = () => {
 
   return (
     <header className="default-header">
-      <div className="logo">
+      <div href="/" class="logo">
+      <Link to="/">
         <img src={require("../images/Asset 3.png")} alt="Insight Logo" />
+      </Link>
       </div>
 
       {/* Hamburger Icon for Mobile */}

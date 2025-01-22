@@ -49,22 +49,33 @@ const Footer = () => {
           {/* Right Section */}
           <div className="footer-right">
             <h3>Contacts</h3>
-            <p>
-              <img src={require("../images/call.png")} alt="Phone Icon" className="contact-icon" />
-              +91 8270883451
-            </p>
-            <p>
-              <img src={require("../images/message.png")} alt="Email Icon" className="contact-icon" />
-              insighteducator09@gmail.com
-            </p>
-            <p>
-              <img src={require("../images/map.png")} alt="Location Icon" className="contact-icon" />
-              138-A, 8 St Cross Cut Road,<br /> Gandhipuram, Coimbatore.
-            </p>
+            <div className="contact-wrapper">
+              <a href="tel:+918270883451" className="contact-link">
+                <img src={require("../images/call.png")} alt="Phone Icon" className="contact-icon" />
+                +91 8270883451
+              </a>
+            </div>
+            <div className="contact-wrapper">
+              <a href="mailto:insighteducator09@gmail.com" className="contact-link">
+                <img src={require("../images/message.png")} alt="Email Icon" className="contact-icon" />
+                insighteducator09@gmail.com
+              </a>
+            </div>
+            <div className="contact-wrapper">
+              <a
+                href="https://maps.app.goo.gl/xni7tFrzPdzbKph5A"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-link"
+              >
+                <img src={require("../images/map.png")} alt="Location Icon" className="contact-icon" />
+                138-A, 8 St Cross Cut Road,<br /> Gandhipuram, Coimbatore.
+              </a>
+            </div>
           </div>
+
         </div>
       </div>
-
 
       {/* Footer Bottom Section */}
       <div className="footer-bottom">

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 /* General Footer Styling */
 .footer {
   background-color: #fff; /* White background */
@@ -82,28 +84,49 @@
 .footer-right {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: flex-start;
 }
 
 .footer-right h3 {
-  font-size: 30px;
-  margin-bottom: 3px;
-  margin-top: 5px;
+  font-size: 30px; /* Match font size from the image */
+  font-weight: bold;
+  color: #c8161d; /* Updated color to match the red in the image */
+  margin: 0; /* Remove extra spacing */
 }
 
 .footer-right p {
-  font-size: 20px;
-  color: #000;
-  font-weight: bold;
+  font-size: 14px; /* Match font size */
+  color: #000; /* Black text color as per the image */
   display: flex;
+  flex-direction: row; /* Ensure icon and text are aligned horizontally */
   align-items: center;
-  margin-bottom: 0px;
-  margin-top: 10px;
+  margin-bottom: 18px; /* Adjust spacing */
+}
+
+.contact-wrapper {
+  display: flex; /* Flex container for each icon and text */
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
 }
 
 .contact-icon {
-  width: 50px;
-  margin-right: 10px;
+  width: 50px; /* Match smaller icon size */
+  height: 50px; /* Consistent with the icon size */
+}
+
+.contact-link {
+  text-decoration: none; /* Remove underline from links */
+  font-size: 22px;
+  display: flex;
+  font-style: italic;
+  align-items: center;
+  color: inherit; /* Match link color with the parent */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact-link:hover {
+  color: #c8161d; /* Match hover color with the heading */
 }
 
 /* Footer Bottom Section */
@@ -139,6 +162,16 @@
     gap: 20px;
     padding: 15px 10px;
     margin: 0;
+  }
+
+  .contact-link {
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    font-style: italic;
+    align-items: center;
+    color: inherit;
+    transition: color 0.3s ease;
   }
 
   /* Left Section */
@@ -208,6 +241,7 @@
 
   .footer-right {
     text-align: center;
+    justify-content: flex-start;
   }
   .footer-middle ul {
     list-style: none;

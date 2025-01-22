@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./HomeHeader.css";
+import { Link } from "react-router-dom";
 
 const HomeHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,9 @@ const HomeHeader = () => {
       <div className="logo-nav">
         {/* Logo Section */}
         <div className="logo">
-          <img src={require("../images/logo red.png")} alt="INSIGHT Logo" className="logo-image" />
+          <Link to="/">
+            <img src={require("../images/logo red.png")} alt="INSIGHT Logo" className="logo-image" />
+          </Link>
         </div>
 
         {/* Navigation Menu */}
@@ -38,7 +41,6 @@ const HomeHeader = () => {
 
       {/* Contact Section */}
       <div className="contacts-section">
-        <p>+91 8270883451</p>
         <a
           href="https://wa.me/918270883451" 
           target="_blank" 
