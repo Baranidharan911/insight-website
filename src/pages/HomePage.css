@@ -542,11 +542,11 @@ body {
 /* Mobile Responsive Design - Home Page */
 @media screen and (max-width: 768px) {
   .hero {
-    height: 35vh;
+    height: 55vh;
   }
 
   .hero-overlay {
-    top: -80px;
+    top: -60px;
   }
 
   .hero-flex-container {
@@ -566,12 +566,13 @@ body {
   }
 
   .hero-content h3 {
-    font-size: 22px;
+    /* font-size: 22px; */
     color: yellow;
+    margin: 0;
   }
 
   .hero-content h1 {
-    font-size: 32px;
+    font-size: 22px;
   }
 
   .hero-content p {
