@@ -189,6 +189,11 @@
     background-color: #fff;
   }
 
+  .service-card-content {
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+  }
   .services-grid {
     grid-template-columns: 1fr;
     gap: 50px; /* Slightly increase gap for better spacing */
