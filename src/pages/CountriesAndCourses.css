@@ -112,7 +112,7 @@
 
 /* Courses Section */
 .countries-courses-courses-section {
-  padding: 40px 150px; /* Adjusted spacing for better alignment */
+  padding: 40px 100px; /* Adjusted spacing for better alignment */
   background-color: #d7d5d5; /* Light gray background */
 }
 
@@ -127,8 +127,8 @@
 /* Grid Layout for Courses */
 .courses-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Flexible grid for responsiveness */
-  gap: 20px; /* Space between cards */
+  grid-template-columns: repeat(3, 1fr); /* Default: Three columns */
+  gap: 30px; /* Space between cards */
   justify-items: center; /* Center-align items */
   align-items: center;
 }
@@ -139,12 +139,12 @@
   border-radius: 20px; /* Slightly rounded corners for a modern look */
   padding: 20px; /* Padding inside the card */
   width: 100%; /* Full width relative to grid column */
-  max-width: 340px; /* Maximum width for each card */
-  aspect-ratio: 1; /* Ensures square shape */
+  max-width: 320px; /* Maximum width for each card */
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -155,8 +155,8 @@
 }
 
 .countries-courses-course-card img {
-  width: 100%; /* Adjusted width for icons as a percentage */
-  max-width: 380px; /* Maximum width for icons */
+  width: 80%; /* Adjusted width for icons as a percentage */
+  max-width: 340px; /* Maximum width for icons */
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 5px; /* Space below the image */
   object-fit: contain; /* Maintain image proportions */
@@ -164,7 +164,7 @@
 
 .countries-courses-course-card h3 {
   color: #e01111; /* Red text for emphasis */
-  font-size: 24px; /* Adjusted font size for compact design */
+  font-size: 22px; /* Adjusted font size for compact design */
   font-weight: 600;
   line-height: 1.4; /* Improved line spacing */
   margin: 0;
@@ -227,6 +227,7 @@
   .countries-courses-course-card {
     width: 75%;
     max-width: 300px;
+    height: auto;
     margin: 0 auto;
     padding: 15px;
     border-radius: 20px;
