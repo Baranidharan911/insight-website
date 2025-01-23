@@ -2,17 +2,13 @@ import React, { useState } from "react";
 import "./SuccessStories.css";
 
 const SuccessStories = () => {
-  const totalCards = 6;
-  const cardsToShow = 3;
+  const totalTestimonials = 6; // Total number of testimonials
+  const testimonialsToShow = 3; // Number of testimonials visible at once
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentPosition, setCurrentPosition] = useState(0); // Now 0 to 3
 
   const handleNext = () => {
-    if (currentIndex < totalCards - cardsToShow) {
+    if (currentIndex < totalTestimonials - testimonialsToShow) {
       setCurrentIndex((prev) => prev + 1);
-    }
-    if (currentPosition < 3) { // Changed from 2 to 3
-      setCurrentPosition((prev) => prev + 1);
     }
   };
 
@@ -20,10 +16,51 @@ const SuccessStories = () => {
     if (currentIndex > 0) {
       setCurrentIndex((prev) => prev - 1);
     }
-    if (currentPosition > 0) {
-      setCurrentPosition((prev) => prev - 1);
-    }
   };
+
+  const testimonials = [
+    {
+      name: "Shabir Basha",
+      stars: 5,
+      review:
+        "Highly recommended. Bhogan Mediasoft is an excellent digital marketing agency, with a focus on passion for all digital solutions.",
+    },
+    {
+      name: "John Doe",
+      stars: 5,
+      review:
+        "Outstanding service and results! They helped my business grow beyond expectations.",
+    },
+    {
+      name: "Jane Smith",
+      stars: 4,
+      review: "Great experience! Professional and highly knowledgeable team.",
+    },
+    {
+      name: "Alice Brown",
+      stars: 5,
+      review:
+        "Fantastic! Their innovative approach helped me achieve my goals.",
+    },
+    {
+      name: "Michael Lee",
+      stars: 4,
+      review:
+        "Impressive results and excellent communication throughout the project.",
+    },
+    {
+      name: "Emily White",
+      stars: 5,
+      review:
+        "A truly dedicated and talented team! Highly recommend their services.",
+    },
+    {
+      name: "Emily White",
+      stars: 5,
+      review:
+        "A truly dedicated and talented team! Highly recommend their services.",
+    },
+  ];
 
   return (
     <div className="success-stories-page">
@@ -34,60 +71,55 @@ const SuccessStories = () => {
         </div>
       </section>
 
-      {/* Success Stories Video Section */}
+      {/* Success Stories Section */}
       <section className="success-stories-video-section">
         <h2>Hear from the students themselves!</h2>
 
-        {/* Video Slider */}
-        <div className="video-carousel">
-          <div className="video-slider" style={{ transform: `translateX(-${currentIndex * 364}px)` }}>
-            {[...Array(totalCards)].map((_, index) => (
-              <div key={index} className="video-card">
-                <div className="video-placeholder">
-                  <div className="play-icon"></div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Red Boxes with White Boxes */}
-        <div className="pagination-indicator">
-          {[0, 1, 2].map((box) => (
-            <div key={box} className="pagination-box">
-              <div
-                className="inner-box"
-                style={{
-                  transform:
-                    currentPosition === 0
-                      ? "translateX(0%)"
-                      : currentPosition === 1
-                      ? "translateX(63%)"
-                      : currentPosition === 2
-                      ? "translateX(96%)"
-                      : "translateX(160%)",
-                }}
-              ></div>
+        {/* Static Videos */}
+        <div className="video-grid">
+          {[...Array(3)].map((_, index) => (
+            <div key={index} className="video-card">
+              <div className="play-icon"></div>
             </div>
           ))}
         </div>
 
-        {/* Navigation Buttons */}
-        <div className="navigation-buttons">
-          <button
-            className="nav-arrow prev"
-            onClick={handlePrev}
-            disabled={currentIndex === 0 && currentPosition === 0}
+        {/* Scrollable Testimonials */}
+        <div className="testimonial-carousel">
+          <div
+            className="testimonial-slider"
+            style={{ transform: `translateX(-${currentIndex * 390}px)` }}
           >
-            ‹
-          </button>
-          <button
-            className="nav-arrow next"
-            onClick={handleNext}
-            disabled={currentIndex === totalCards - cardsToShow && currentPosition === 3} // Changed from 2 to 3
-          >
-            ›
-          </button>
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="testimonial-box">
+                <h3>{testimonial.name}</h3>
+                <div className="stars">
+                  {Array.from({ length: testimonial.stars }, (_, i) => (
+                    <span key={i}>&#9733;</span>
+                  ))}
+                </div>
+                <p>{testimonial.review}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Navigation Buttons */}
+          <div className="navigation-buttons">
+            <button
+              className="nav-arrow prev"
+              onClick={handlePrev}
+              disabled={currentIndex === 0}
+            >
+              ‹
+            </button>
+            <button
+              className="nav-arrow next"
+              onClick={handleNext}
+              disabled={currentIndex === totalTestimonials - testimonialsToShow}
+            >
+              ›
+            </button>
+          </div>
         </div>
       </section>
     </div>
